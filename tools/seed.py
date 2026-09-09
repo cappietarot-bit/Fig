@@ -495,7 +495,7 @@ CARDS = [
 # touching a line of the card that is already right. All of these are Parables,
 # so none of them carries a name. A real testimony goes in CARDS with the
 # "Sent in" badge and a first name and city.
-# Full length stories: 3 to 5 paragraphs of 5 to 7 sentences, plus 2 or 3
+# Full length stories: 3 paragraphs of 5 to 7 sentences, plus 2 or 3
 # parables that light up different moments in the story. The app reveals them in
 # stages, one paragraph, then the rest, then the parables.
 #
@@ -506,28 +506,43 @@ FULL = {
 
     "Mark 11:24": {
         "paragraphs": [
-            "She had been turned down for the apartment twice, and the second refusal came by voicemail while she was standing in the queue at the bank. The woman on the message was kind about it, which somehow made it worse. She had done everything right both times. She had the deposit, the references, the letter from her manager, and none of it had counted for anything against forty other people who also had those. She deleted the voicemail in the car and sat there for a while without turning the key.",
-
-            "What she stopped doing that month was asking. Not out of bitterness, and not because she had given up on the place, but because she had noticed something about the way she asked. Every time she prayed about it there was a small grinding sound underneath the words, a sound like somebody pushing a door that opens the other way. She could hear that she did not expect anything. So she stopped, and instead she started going to sleep in the apartment.",
-
-            "That is the only way she knows how to say it. She would lie down at night in her mother's spare room and put herself in the other place, and stay there until it was ordinary. She knew which corner the couch went in, because there was only one wall long enough. She knew that the morning came through the window on the left, because she had been shown the unit in March and the light had been on her hands. She was not picturing herself happy in it. She was picturing herself bored in it, putting a mug down, looking for a charger, and that turned out to be the difference.",
-
-            "It went on much longer than she expected. There were six weeks where nothing happened at all and she kept doing it anyway, mostly because stopping would have felt like a decision she did not want to make. Then the manager called about a unit that had never been listed, in the same building, one floor up. She heard herself accept it in a voice that surprised her, because it was not the voice of someone receiving good news. It was the voice of someone confirming an arrangement.",
-
-            "She says the strangest part was walking in. There was no rush of relief, no moment of it finally happening, and for a day or two she wondered whether something was wrong with her. It came to her later that the feeling she was missing is the feeling of getting something you did not have. She had been living there for two months. All that was left was to bring the boxes.",
-        ],
-        "parables": [
             {
-                "title": "The man who cut the key first",
-                "body": "There is an old account of a man who had a key cut for a house he did not own. He carried it for most of a year and people who saw it on his ring thought it was for his brother's place. He was not deluded and he could tell you exactly whose name was on the deed. He simply refused to keep his hands empty while he waited, and he said that a man with a key in his pocket negotiates differently from a man without one. Whether the key ever opened that door is not really the point of the story. It changed how he walked up to it.",
+                "text": "She had been turned down for the apartment twice, and the second refusal came by voicemail while she was standing in the queue at the bank. The woman on the message was kind about it, which somehow made it worse. She had done everything right both times. She had the deposit, the references, the letter from her manager, and none of it counted for anything against forty other people who had those too. She deleted the message in the car and sat there a while without turning the key.",
+                "links": [{
+                    "phrase": "turned down for the apartment twice",
+                    "ref": "Matthew 15:23",
+                    "moment": "A woman asks him for her daughter and he answers her not a word. His own disciples ask him to send her away. She is refused twice before anything turns, and she does not leave.",
+                }],
             },
             {
-                "title": "Seven times toward the sea",
-                "body": "Elijah told his servant to go and look toward the sea, and the servant went and came back and said there was nothing. He was sent again, and again, and there was nothing each time, until the seventh, when he reported a cloud the size of a man's hand. The remarkable thing in that account is not the cloud. It is that Elijah had already told the king to go and eat, because he could hear the sound of abundance of rain, and at that point the sky was completely clear. He was not waiting to find out. He was waiting for the arrival of something already settled.",
+                "text": "What she stopped doing that month was asking. Not out of bitterness, and not because she had let the place go, but because she had heard something in the way she asked. Underneath the words there was a small grinding sound, like somebody pushing a door that opens the other way. She could hear that she did not expect anything. So she stopped, and instead she started going to sleep in the apartment, which is the only way she knows how to say it. She would lie down in her mother's spare room and put herself in the other place and stay there until it was ordinary, until she was bored in it, putting a mug down, looking for a charger.",
+                "links": [
+                    {
+                        "phrase": "she did not expect anything",
+                        "ref": "James 1:6",
+                        "moment": "The one who wavers is a wave driven with the wind and tossed. Not still, not lazy, just in motion all day without arriving anywhere.",
+                    },
+                    {
+                        "phrase": "going to sleep in the apartment",
+                        "ref": "Genesis 28:11",
+                        "moment": "Jacob lies down for the night in a place he is only passing through, with a stone for a pillow, and is told in his sleep that the ground he is lying on is already given to him.",
+                    },
+                ],
             },
             {
-                "title": "The table set on Thursday",
-                "body": "A woman in a village story used to lay an extra place at her table on the night before her son came home on leave, and one year she laid it before the letter arrived confirming he would come. Her neighbours thought it was superstition and told her so. She said it was nothing of the kind. She said the plate was not there to make him come, it was there because she had already decided what kind of week this was going to be, and a person who has decided that sets the table accordingly. He came on the Friday.",
+                "text": "Six weeks went by with nothing at all, and she kept doing it, mostly because stopping would have been a decision she did not want to make. Then the manager called about a unit that had never been listed, one floor up in the same building. She heard herself accept it in a voice that surprised her, because it was not the voice of someone getting good news. It was the voice of someone confirming an arrangement. The strangest part was walking in, because there was no rush of relief, and for a day or two she wondered what was wrong with her. What she was missing is the feeling of getting something you did not have. All that was left was to bring the boxes.",
+                "links": [
+                    {
+                        "phrase": "Six weeks went by with nothing at all",
+                        "ref": "1 Kings 18:43",
+                        "moment": "Elijah sends his servant to look toward the sea and the servant comes back with nothing, seven times over. Elijah had already told the king to go and eat, because he could hear rain that had not started.",
+                    },
+                    {
+                        "phrase": "the voice of someone confirming an arrangement",
+                        "ref": "Hebrews 11:1",
+                        "moment": "Substance and evidence are both words from a courtroom. Faith is entered as the exhibit rather than argued as the case.",
+                    },
+                ],
             },
         ],
     },
@@ -792,6 +807,50 @@ def lookup(bible, ref):
     return book, chap, first, last, text
 
 
+def build_paragraphs(bible, raw, card_ref):
+    """Normalise paragraphs and resolve their inline scripture anchors.
+
+    A paragraph is either a plain string or a dict with text and links. A link
+    names a phrase inside that paragraph and the biblical moment it touches. The
+    phrase has to appear in the text exactly once, or the build stops: a link the
+    app cannot find would silently vanish from the story.
+
+    The same links become the parables listed at the end, so a moment is written
+    once and shows up in both places.
+    """
+    paras, parables, seen = [], [], set()
+
+    for para in raw:
+        if isinstance(para, str):
+            paras.append({"text": para, "links": []})
+            continue
+
+        text, out = para["text"], []
+        for link in para.get("links", []):
+            phrase = link["phrase"]
+            n = text.count(phrase)
+            if n != 1:
+                raise SystemExit(
+                    "%s: the phrase %r appears %d times in its paragraph, needs exactly 1"
+                    % (card_ref, phrase, n))
+            book, chap, first, last, vtext = lookup(bible, link["ref"])
+            entry = {
+                "phrase": phrase,
+                "ref": link["ref"],
+                "book": book, "chapter": chap, "verse": first,
+                "moment": link["moment"],
+                "text": vtext,
+            }
+            out.append(entry)
+            if link["ref"] not in seen:
+                seen.add(link["ref"])
+                parables.append(entry)
+
+        paras.append({"text": text, "links": out})
+
+    return paras, parables
+
+
 def main():
     bible = load_bible()
     streams = {}
@@ -809,17 +868,20 @@ def main():
         # plus parables so the app only has to understand one shape.
         if ref in FULL:
             f = FULL[ref]
+            paras, parables = build_paragraphs(bible, f["paragraphs"], ref)
             card["story"] = {
                 "badge": "Parable",
-                "paragraphs": f["paragraphs"],
-                "parables": f.get("parables", []),
+                "paragraphs": paras,
+                "parables": parables,
                 "full": True,
             }
         elif story:
-            card["story"] = {"badge": story[0], "paragraphs": [story[1]],
+            card["story"] = {"badge": story[0],
+                             "paragraphs": [{"text": story[1], "links": []}],
                              "parables": [], "full": False}
         elif ref in EXTRA_STORIES:
-            card["story"] = {"badge": "Parable", "paragraphs": [EXTRA_STORIES[ref]],
+            card["story"] = {"badge": "Parable",
+                             "paragraphs": [{"text": EXTRA_STORIES[ref], "links": []}],
                              "parables": [], "full": False}
         streams.setdefault(stream, []).append(card)
 
@@ -840,12 +902,11 @@ def main():
         print("%-12s %2d cards, %2d written to full length, %2d still short"
               % (name, len(cards), len(full), len(cards) - len(full)))
 
-    words = sum(len(p.split()) for c in
-                (c for v in streams.values() for c in v)
-                for p in c["story"]["paragraphs"])
-    words += sum(len(pb["body"].split()) for c in
-                 (c for v in streams.values() for c in v)
-                 for pb in c["story"]["parables"])
+    allcards = [c for v in streams.values() for c in v]
+    words = sum(len(p["text"].split()) for c in allcards for p in c["story"]["paragraphs"])
+    words += sum(len(pb["moment"].split()) for c in allcards for pb in c["story"]["parables"])
+    anchors = sum(len(p["links"]) for c in allcards for p in c["story"]["paragraphs"])
+    print("%d inline scripture anchors" % anchors)
     print("\n%d days before anything repeats, %s words of story -> %s"
           % (shortest, "{:,}".format(words), OUT))
     if todo:

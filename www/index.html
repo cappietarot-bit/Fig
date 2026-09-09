@@ -213,11 +213,35 @@ body{
   max-height:min(200px,26vh);overflow:auto;
   transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .35s ease,margin .5s ease;
 }
-/* One paragraph at first, then the whole thing in a pane you can scroll,
-   then it folds back to a name when the scripture comes up. */
+/* One paragraph rises as a sheet. Once it opens fully the story stops being a
+   panel and becomes the page: the sheet grows to the top of the card, the quote
+   steps out of the way, and the text runs the height of the screen. */
+#app[data-stage="rest"] .sheets,
+#app[data-stage="parables"] .sheets{top:0}
+#app[data-stage="rest"] .story,
+#app[data-stage="parables"] .story{
+  flex:1;min-height:0;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--storybot),var(--storybot));
+  padding:calc(16px + env(safe-area-inset-top)) 26px 0;
+  border-top:0;
+}
+#app[data-stage="rest"] .quotewrap,
+#app[data-stage="parables"] .quotewrap{display:none}
 #app[data-stage="rest"] .storybody,
-#app[data-stage="parables"] .storybody{max-height:min(560px,64vh)}
+#app[data-stage="parables"] .storybody{
+  flex:1;max-height:none;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  padding-bottom:8px;
+}
 #app[data-stage="verse"] .storybody{max-height:0;opacity:0;margin-top:0;overflow:hidden}
+/* An anchored phrase inside the story. Underlined rather than coloured, so a
+   paragraph with three of them still reads as prose and not as a link farm. */
+.anchor{
+  background:none;border:0;padding:0;margin:0;font:inherit;color:var(--bone);
+  cursor:pointer;text-decoration:underline;text-decoration-style:dotted;
+  text-underline-offset:3px;text-decoration-color:var(--brass);
+}
+.anchor:hover{color:var(--brass)}
+.anchor:focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:3px}
 .storybody p{margin:0 0 11px}
 .storybody p:last-child{margin-bottom:0}
 .storybody .more{display:none}
@@ -236,7 +260,24 @@ body{
   display:block;font-family:var(--serif);font-size:16px;font-weight:500;
   color:var(--bone);margin-bottom:3px;letter-spacing:-.005em;
 }
+.parable .pr{
+  display:block;font-family:var(--sans);font-size:9.5px;font-weight:700;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--brass);margin-bottom:4px;
+}
 .parable .pb{margin:0;font-size:12.5px;line-height:1.6;color:var(--storytext)}
+.parable .pv{
+  margin:7px 0 0;font-family:var(--book);font-size:12px;line-height:1.55;
+  font-style:italic;color:var(--dim);
+}
+
+.storycue{
+  display:none;flex:0 0 auto;align-items:center;gap:9px;margin:0;
+  padding:12px 0 calc(14px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--hairline);
+  font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);
+}
+#app[data-stage="rest"] .storycue,
+#app[data-stage="parables"] .storycue{display:flex}
 
 /* ---------------- verse ---------------- */
 .versecard{
@@ -384,6 +425,7 @@ body{
         </div>
         <div class="storybody" id="storyBody"></div>
         <div class="parables" id="parables"></div>
+        <p class="storycue" id="storyCue"><span class="pulse"></span><span id="storyCueText"></span></p>
       </div>
 
       <div class="versecard" id="verseCard">
@@ -530,6 +572,7 @@ function paintCue(){
                 parables: "Tap for what it is like",
                 verse: "Tap for the verse it rests on" }[next] || "";
   document.getElementById("cueText").textContent = label;
+  document.getElementById("storyCueText").textContent = label;
 }
 
 /* ---------------- music ----------------
@@ -700,6 +743,36 @@ function paintTabs(){
   });
 }
 
+/* Splits a paragraph on its anchored phrases and turns each one into a button
+   that opens that chapter. Built from text nodes rather than innerHTML so a
+   story can never inject markup. */
+function renderWithAnchors(el, text, links){
+  if (!links.length){ el.textContent = text; return; }
+
+  var marks = links.map(function(l){ return { at: text.indexOf(l.phrase), link: l }; })
+                   .filter(function(m){ return m.at >= 0; })
+                   .sort(function(a, b){ return a.at - b.at; });
+
+  var cursor = 0;
+  marks.forEach(function(m){
+    if (m.at < cursor) return;                       /* overlapping phrases */
+    if (m.at > cursor) el.appendChild(document.createTextNode(text.slice(cursor, m.at)));
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "anchor";
+    b.textContent = m.link.phrase;
+    b.title = m.link.ref;
+    b.setAttribute("aria-label", m.link.phrase + ", opens " + m.link.ref);
+    b.addEventListener("click", function(e){
+      e.stopPropagation();
+      openReader(m.link.book, m.link.chapter, m.link.verse);
+    });
+    el.appendChild(b);
+    cursor = m.at + m.link.phrase.length;
+  });
+  if (cursor < text.length) el.appendChild(document.createTextNode(text.slice(cursor)));
+}
+
 function paintCard(){
   var c = cardFor(stream);
   if (!c) return;
@@ -724,28 +797,42 @@ function paintCard(){
 
   if (st){
     document.getElementById("badge").textContent = st.badge || "Parable";
-    (st.paragraphs || []).forEach(function(text, i){
+    (st.paragraphs || []).forEach(function(para, i){
       var p = document.createElement("p");
       if (i > 0) p.className = "more";
-      p.textContent = text;
+      renderWithAnchors(p, para.text, para.links || []);
       body.appendChild(p);
     });
 
     if ((st.parables || []).length){
       var h = document.createElement("h4");
-      h.textContent = "Three ways it has looked";
+      h.textContent = "Where this has happened before";
       pars.appendChild(h);
       st.parables.forEach(function(pb){
         var wrap = document.createElement("div");
         wrap.className = "parable";
+
+        var r = document.createElement("span");
+        r.className = "pr";
+        r.textContent = pb.ref;
+
         var t = document.createElement("span");
         t.className = "pt";
-        t.textContent = pb.title || "";
+        t.textContent = pb.phrase;
+
         var b = document.createElement("p");
         b.className = "pb";
-        b.textContent = pb.body;
-        if (pb.title) wrap.appendChild(t);
-        wrap.appendChild(b);
+        b.textContent = pb.moment;
+
+        var v = document.createElement("p");
+        v.className = "pv";
+        v.textContent = pb.text;
+
+        wrap.appendChild(r); wrap.appendChild(t); wrap.appendChild(b); wrap.appendChild(v);
+        wrap.addEventListener("click", function(e){
+          e.stopPropagation();
+          openReader(pb.book, pb.chapter, pb.verse);
+        });
         pars.appendChild(wrap);
       });
     }
@@ -854,7 +941,11 @@ function toast(msg){
 
 function wire(){
   var card = document.getElementById("card");
+  var downAt = null;
+  card.addEventListener("pointerdown", function(e){ downAt = { x: e.clientX, y: e.clientY }; });
   card.addEventListener("click", function(e){
+    /* a scroll or a drag is not a tap */
+    if (downAt && Math.abs(e.clientY - downAt.y) + Math.abs(e.clientX - downAt.x) > 12) return;
     if (e.target.closest("#verseCard")) return;   /* the verse has its own job */
     advance();
   });
