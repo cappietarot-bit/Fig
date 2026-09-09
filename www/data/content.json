@@ -103,12 +103,78 @@
      "badge": "Parable",
      "paragraphs": [
       {
-       "text": "She sent the same application to the same company four times over two years. Friends told her it was starting to look desperate. She could not explain that from the inside it did not feel desperate, it felt like arriving early. The fourth time, a new manager read it and asked why she had not applied sooner. She had. Nobody had opened the door yet.",
-       "links": []
+       "text": "He applied to the same company four times across two years, and by the third one his friends had started being careful about how they asked how it went. One of them told him plainly that it was beginning to look desperate, and that there were other firms. He understood why it looked that way from outside. From inside it did not feel like desperation at all, it felt closer to arriving somewhere early and waiting in the car. He never managed to explain the difference to anyone, and after a while he stopped trying.",
+       "links": [
+        {
+         "phrase": "it was beginning to look desperate",
+         "ref": "Luke 18:3",
+         "book": "Luke",
+         "chapter": 18,
+         "verse": 3,
+         "moment": "A widow keeps coming to a judge who does not fear God and does not care about her. She has no leverage of any kind. The only thing she has is that she keeps coming back, and the story is told approvingly.",
+         "text": "And there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary."
+        }
+       ]
+      },
+      {
+       "text": "What kept him going was not optimism, which he says he did not really have. It was that he could not make the other version make sense. If the work was the work he was supposed to be doing, then a closed door was information about timing and nothing else. He kept the application current, he kept reading what they published, and twice a year he sent it again with the parts updated that had actually changed. He was not hammering on it every week. He was simply not going away, which is a different thing, and it costs less than people think.",
+       "links": [
+        {
+         "phrase": "He was simply not going away",
+         "ref": "Luke 11:8",
+         "book": "Luke",
+         "chapter": 11,
+         "verse": 8,
+         "moment": "A man knocks on a friend's door at midnight for bread. The friend is in bed with his children and says no. He gets up and gives him as much as he needs, not out of friendship, but because of the knocking itself.",
+         "text": "I say unto you, Though he will not rise and give him, because he is his friend, yet because of his importunity he will rise and give him as many as he needeth."
+        }
+       ]
+      },
+      {
+       "text": "The fourth time, a manager who had joined that spring read it and called him within the week. Her first question was why he had not applied sooner, and he had to sit with that for a second before he answered. He had applied, three times, into the same inbox. Nobody had opened it. He says now that the thing he had been wrong about for two years was the picture in his head, where a closed door meant a decision had been made about him. Most of the time nothing had been decided at all. There had only been nobody on the other side yet.",
+       "links": [
+        {
+         "phrase": "Nobody had opened it",
+         "ref": "Acts 12:16",
+         "book": "Acts",
+         "chapter": 12,
+         "verse": 16,
+         "moment": "Peter, out of prison in the night, stands at the gate knocking while the people praying for his release argue indoors about whether it can possibly be him. He continues knocking. When they finally open the door they are astonished.",
+         "text": "But Peter continued knocking: and when they had opened the door, and saw him, they were astonished."
+        }
+       ]
       }
      ],
-     "parables": [],
-     "full": false
+     "parables": [
+      {
+       "phrase": "it was beginning to look desperate",
+       "ref": "Luke 18:3",
+       "book": "Luke",
+       "chapter": 18,
+       "verse": 3,
+       "moment": "A widow keeps coming to a judge who does not fear God and does not care about her. She has no leverage of any kind. The only thing she has is that she keeps coming back, and the story is told approvingly.",
+       "text": "And there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary."
+      },
+      {
+       "phrase": "He was simply not going away",
+       "ref": "Luke 11:8",
+       "book": "Luke",
+       "chapter": 11,
+       "verse": 8,
+       "moment": "A man knocks on a friend's door at midnight for bread. The friend is in bed with his children and says no. He gets up and gives him as much as he needs, not out of friendship, but because of the knocking itself.",
+       "text": "I say unto you, Though he will not rise and give him, because he is his friend, yet because of his importunity he will rise and give him as many as he needeth."
+      },
+      {
+       "phrase": "Nobody had opened it",
+       "ref": "Acts 12:16",
+       "book": "Acts",
+       "chapter": 12,
+       "verse": 16,
+       "moment": "Peter, out of prison in the night, stands at the gate knocking while the people praying for his release argue indoors about whether it can possibly be him. He continues knocking. When they finally open the door they are astonished.",
+       "text": "But Peter continued knocking: and when they had opened the door, and saw him, they were astonished."
+      }
+     ],
+     "full": true
     }
    },
    {
@@ -124,12 +190,78 @@
      "badge": "Parable",
      "paragraphs": [
       {
-       "text": "He prayed for the business and kept a second plan running quietly underneath it, the way you keep a hand on a door. Both plans got half of him and neither one moved. The month he shut the second plan down was not the month he felt brave. It was the month he got tired of paying for two lives. Things started moving in the one he actually chose.",
-       "links": []
+       "text": "He prayed about the business for two years and the whole time he kept a second plan running underneath it, the way you keep one hand on a door you might need. The second plan was sensible. It had a timeline and a fallback salary and the quiet approval of everyone who loved him. He would not have described himself as hedging, because both halves felt like responsibility rather than doubt. What he could not explain was why neither one ever moved, given how much of him each of them had.",
+       "links": [
+        {
+         "phrase": "one hand on a door you might need",
+         "ref": "1 Kings 18:21",
+         "book": "1 Kings",
+         "chapter": 18,
+         "verse": 21,
+         "moment": "Elijah stands in front of a whole nation and asks how long they will go on halting between two opinions. Nobody answers him. The crowd is not hostile, it is simply divided, and being divided is what has left them stuck.",
+         "text": "And Elijah came unto all the people, and said, How long halt ye between two opinions? if the LORD be God, follow him: but if Baal, then follow him. And the people answered him not a word."
+        }
+       ]
+      },
+      {
+       "text": "The month he closed the second plan down was not the month he felt brave about anything. He was tired, mostly, of paying the upkeep on two lives. He remembers writing the email that ended it and noticing his hands were steady, which surprised him, and then sitting in the quiet afterwards feeling like he had let go of a rope in a river. For about three weeks nothing improved and he assumed he had made a serious mistake. What did change immediately was how he spoke about the business, because there was no longer a sentence available to him that began with if this does not work.",
+       "links": [
+        {
+         "phrase": "he had let go of a rope in a river",
+         "ref": "James 1:8",
+         "book": "James",
+         "chapter": 1,
+         "verse": 8,
+         "moment": "James names the double minded man unstable in all his ways, and puts it directly after the wave driven by the wind. The instability is not a character flaw. It is the arithmetic of wanting two outcomes at once.",
+         "text": "A double minded man is unstable in all his ways."
+        }
+       ]
+      },
+      {
+       "text": "Things started to move in the one he had actually chosen, and he is careful about how he tells this part, because he does not think the closing of the second plan caused the first one to work. What he thinks is that a man with one plan asks differently. He made calls he had been putting off for a year in a single afternoon. He priced the work at what it was worth instead of at what he could defend. None of that had been impossible before. It had just been unavailable to somebody who was still deciding.",
+       "links": [
+        {
+         "phrase": "somebody who was still deciding",
+         "ref": "Luke 9:62",
+         "book": "Luke",
+         "chapter": 9,
+         "verse": 62,
+         "moment": "No man having put his hand to the plough and looking back is fit for the kingdom. The image is agricultural and completely practical. A man watching over his shoulder cannot cut a straight furrow, however hard he is working.",
+         "text": "And Jesus said unto him, No man, having put his hand to the plough, and looking back, is fit for the kingdom of God."
+        }
+       ]
       }
      ],
-     "parables": [],
-     "full": false
+     "parables": [
+      {
+       "phrase": "one hand on a door you might need",
+       "ref": "1 Kings 18:21",
+       "book": "1 Kings",
+       "chapter": 18,
+       "verse": 21,
+       "moment": "Elijah stands in front of a whole nation and asks how long they will go on halting between two opinions. Nobody answers him. The crowd is not hostile, it is simply divided, and being divided is what has left them stuck.",
+       "text": "And Elijah came unto all the people, and said, How long halt ye between two opinions? if the LORD be God, follow him: but if Baal, then follow him. And the people answered him not a word."
+      },
+      {
+       "phrase": "he had let go of a rope in a river",
+       "ref": "James 1:8",
+       "book": "James",
+       "chapter": 1,
+       "verse": 8,
+       "moment": "James names the double minded man unstable in all his ways, and puts it directly after the wave driven by the wind. The instability is not a character flaw. It is the arithmetic of wanting two outcomes at once.",
+       "text": "A double minded man is unstable in all his ways."
+      },
+      {
+       "phrase": "somebody who was still deciding",
+       "ref": "Luke 9:62",
+       "book": "Luke",
+       "chapter": 9,
+       "verse": 62,
+       "moment": "No man having put his hand to the plough and looking back is fit for the kingdom. The image is agricultural and completely practical. A man watching over his shoulder cannot cut a straight furrow, however hard he is working.",
+       "text": "And Jesus said unto him, No man, having put his hand to the plough, and looking back, is fit for the kingdom of God."
+      }
+     ],
+     "full": true
     }
    },
    {
@@ -145,12 +277,78 @@
      "badge": "Parable",
      "paragraphs": [
       {
-       "text": "He prayed the same careful sentence every night for a year, and underneath it he assumed nothing would change. Nothing changed. The night he stopped asking and started thanking, the sentence was worse and shorter, and something moved that week. The words were never the thing being answered.",
-       "links": []
+       "text": "He prayed the same sentence every night for the better part of a year, and it was a good sentence. He had worked on it. It was specific about what he wanted and careful not to presume, and it thanked God in advance for whatever was best, and he could say the whole thing in under a minute with his eyes closed. Nothing happened for eleven months. He assumed the problem was that he had not earned it yet, or that the answer was no in a way nobody had told him about.",
+       "links": [
+        {
+         "phrase": "He had worked on it",
+         "ref": "Matthew 6:7",
+         "book": "Matthew",
+         "chapter": 6,
+         "verse": 7,
+         "moment": "Use not vain repetitions, as the heathen do, for they think that they shall be heard for their much speaking. The problem named is not the length of the prayer. It is the belief that the wording is what does the work.",
+         "text": "But when ye pray, use not vain repetitions, as the heathen do: for they think that they shall be heard for their much speaking."
+        }
+       ]
+      },
+      {
+       "text": "What he had never once examined was what sat underneath the sentence while he was saying it. He found it by accident, describing his situation to a friend, and hearing his own voice explain in flat detail why the thing was probably not going to happen. He had been running two channels at the same time. The words went up and the assumption stayed exactly where it had been, and the assumption was that his life did not do this sort of thing. He says he could have kept praying that sentence for another ten years without disturbing it.",
+       "links": [
+        {
+         "phrase": "the assumption stayed exactly where it had been",
+         "ref": "Matthew 9:21",
+         "book": "Matthew",
+         "chapter": 9,
+         "verse": 21,
+         "moment": "A woman in a crowd says within herself, if I may but touch his garment I shall be whole. Nobody hears it. She never says it out loud to him at all, and what she said inwardly is the thing he answers.",
+         "text": "For she said within herself, If I may but touch his garment, I shall be whole."
+        }
+       ]
+      },
+      {
+       "text": "The night it turned he did not pray his sentence. He was too tired and he said something short and slightly graceless instead, but he said it from the other side, as somebody for whom this was ordinary. It felt presumptuous and he almost took it back. Something moved that week, and he has never been able to prove the two are connected, and he is honest about that. What he is sure of is narrower and more useful. The words were never what was being answered. They had only ever been the surface of something else, and he had spent a year polishing the surface.",
+       "links": [
+        {
+         "phrase": "he said it from the other side",
+         "ref": "Matthew 8:13",
+         "book": "Matthew",
+         "chapter": 8,
+         "verse": 13,
+         "moment": "As thou hast believed, so be it done unto thee. The officer is not measured on his words, which were brief, or his standing, which was foreign. He is measured on the state he was in when he asked.",
+         "text": "And Jesus said unto the centurion, Go thy way; and as thou hast believed, so be it done unto thee. And his servant was healed in the selfsame hour."
+        }
+       ]
       }
      ],
-     "parables": [],
-     "full": false
+     "parables": [
+      {
+       "phrase": "He had worked on it",
+       "ref": "Matthew 6:7",
+       "book": "Matthew",
+       "chapter": 6,
+       "verse": 7,
+       "moment": "Use not vain repetitions, as the heathen do, for they think that they shall be heard for their much speaking. The problem named is not the length of the prayer. It is the belief that the wording is what does the work.",
+       "text": "But when ye pray, use not vain repetitions, as the heathen do: for they think that they shall be heard for their much speaking."
+      },
+      {
+       "phrase": "the assumption stayed exactly where it had been",
+       "ref": "Matthew 9:21",
+       "book": "Matthew",
+       "chapter": 9,
+       "verse": 21,
+       "moment": "A woman in a crowd says within herself, if I may but touch his garment I shall be whole. Nobody hears it. She never says it out loud to him at all, and what she said inwardly is the thing he answers.",
+       "text": "For she said within herself, If I may but touch his garment, I shall be whole."
+      },
+      {
+       "phrase": "he said it from the other side",
+       "ref": "Matthew 8:13",
+       "book": "Matthew",
+       "chapter": 8,
+       "verse": 13,
+       "moment": "As thou hast believed, so be it done unto thee. The officer is not measured on his words, which were brief, or his standing, which was foreign. He is measured on the state he was in when he asked.",
+       "text": "And Jesus said unto the centurion, Go thy way; and as thou hast believed, so be it done unto thee. And his servant was healed in the selfsame hour."
+      }
+     ],
+     "full": true
     }
    },
    {
@@ -166,12 +364,78 @@
      "badge": "Parable",
      "paragraphs": [
       {
-       "text": "Every quote she asked for came back too expensive, and she had started saying so before anyone answered. Somebody pointed out that she was making the calls already braced. She tried one week of asking plainly, without the flinch in her voice, and got two prices she could work with. Those prices had probably always been there. She had been asking in a way that assumed the answer.",
-       "links": []
+       "text": "Every quote she asked for came back too expensive, which she took as a fact about the market for about three years. She was renovating a small place a room at a time and every trade she called confirmed what she already believed. It was only when a friend sat in the room during one of the calls that anything was pointed out to her. The friend said she had apologised twice before naming what she wanted, and had asked whether there was any chance it could be done for less, in the voice of somebody who already knew the answer.",
+       "links": [
+        {
+         "phrase": "in the voice of somebody who already knew the answer",
+         "ref": "Mark 9:22",
+         "book": "Mark",
+         "chapter": 9,
+         "verse": 22,
+         "moment": "A father brings his son and says, if thou canst do any thing, have compassion on us and help us. He has already been to the disciples and it did not work. The doubt in the sentence is not about his son. It is about what is possible.",
+         "text": "And ofttimes it hath cast him into the fire, and into the waters, to destroy him: but if thou canst do any thing, have compassion on us, and help us."
+        }
+       ]
+      },
+      {
+       "text": "She did not like hearing it and she argued about it for a week. Then she tried one experiment, which was to call four places and say plainly what she wanted and what she could pay, without the apology at the front and without the escape hatch at the end. She found that her voice shook slightly the first two times and that she wanted very badly to soften it. Two of the four came back with numbers she could work with. She is fairly sure those prices had always existed. She had simply never been asking a question that could return them.",
+       "links": [
+        {
+         "phrase": "her voice shook slightly the first two times",
+         "ref": "Numbers 13:33",
+         "book": "Numbers",
+         "chapter": 13,
+         "verse": 33,
+         "moment": "The scouts report giants and add, we were in our own sight as grasshoppers, and so we were in their sight. They describe how they saw themselves first, and then hand that same view to everyone else as a fact about the land.",
+         "text": "And there we saw the giants, the sons of Anak, which come of the giants: and we were in our own sight as grasshoppers, and so we were in their sight."
+        }
+       ]
+      },
+      {
+       "text": "What she took from it was not that she had been timid, which she thinks is too small a word for what was happening. She had been carrying an estimate about what her life cost and what was available to it, and she had been putting that estimate into every conversation before anybody else got to speak. The limit had never been sitting with the trades. It had been arriving with her. She says she still catches herself doing it and that catching it is most of the work, because the correction takes about four seconds once you have noticed.",
+       "links": [
+        {
+         "phrase": "The limit had never been sitting with the trades",
+         "ref": "Mark 9:24",
+         "book": "Mark",
+         "chapter": 9,
+         "verse": 24,
+         "moment": "The father answers immediately and with tears, Lord, I believe, help thou mine unbelief. He does not pretend the doubt is gone. He names both at once and brings the whole man, which is the last thing said before the boy is healed.",
+         "text": "And straightway the father of the child cried out, and said with tears, Lord, I believe; help thou mine unbelief."
+        }
+       ]
       }
      ],
-     "parables": [],
-     "full": false
+     "parables": [
+      {
+       "phrase": "in the voice of somebody who already knew the answer",
+       "ref": "Mark 9:22",
+       "book": "Mark",
+       "chapter": 9,
+       "verse": 22,
+       "moment": "A father brings his son and says, if thou canst do any thing, have compassion on us and help us. He has already been to the disciples and it did not work. The doubt in the sentence is not about his son. It is about what is possible.",
+       "text": "And ofttimes it hath cast him into the fire, and into the waters, to destroy him: but if thou canst do any thing, have compassion on us, and help us."
+      },
+      {
+       "phrase": "her voice shook slightly the first two times",
+       "ref": "Numbers 13:33",
+       "book": "Numbers",
+       "chapter": 13,
+       "verse": 33,
+       "moment": "The scouts report giants and add, we were in our own sight as grasshoppers, and so we were in their sight. They describe how they saw themselves first, and then hand that same view to everyone else as a fact about the land.",
+       "text": "And there we saw the giants, the sons of Anak, which come of the giants: and we were in our own sight as grasshoppers, and so we were in their sight."
+      },
+      {
+       "phrase": "The limit had never been sitting with the trades",
+       "ref": "Mark 9:24",
+       "book": "Mark",
+       "chapter": 9,
+       "verse": 24,
+       "moment": "The father answers immediately and with tears, Lord, I believe, help thou mine unbelief. He does not pretend the doubt is gone. He names both at once and brings the whole man, which is the last thing said before the boy is healed.",
+       "text": "And straightway the father of the child cried out, and said with tears, Lord, I believe; help thou mine unbelief."
+      }
+     ],
+     "full": true
     }
    },
    {
@@ -187,12 +451,78 @@
      "badge": "Parable",
      "paragraphs": [
       {
-       "text": "He bought the frame before the photograph existed. It sat empty on the shelf for most of a year and people asked about it and he said it was for something coming, which embarrassed him a little every time. When the picture finally came back from the printer it fit, because he had measured for it. The frame was not decoration. It was the first thing built.",
-       "links": []
+       "text": "He bought the frame before the photograph existed. It was an expensive frame for what it was and he measured it against a picture that had not been taken, of a boat he did not yet own, in a harbour he had visited once. He put it on the shelf empty. For most of a year people picked it up and asked what it was for, and he said it was for something coming, and every single time he heard how it sounded coming out of his mouth.",
+       "links": [
+        {
+         "phrase": "He put it on the shelf empty",
+         "ref": "Jeremiah 32:9",
+         "book": "Jeremiah",
+         "chapter": 32,
+         "verse": 9,
+         "moment": "Jeremiah buys a field, weighs out the silver, signs the deed and has it witnessed, while the army of Babylon is camped against the city and he himself is shut up in the court of the prison. He buys land nobody could reach.",
+         "text": "And I bought the field of Hanameel my uncle's son, that was in Anathoth, and weighed him the money, even seventeen shekels of silver."
+        }
+       ]
+      },
+      {
+       "text": "He is careful to say that he did not think the frame would make anything happen. He is not superstitious and he would tell you the deed was in someone else's name the whole time. What the frame did was smaller and harder to argue with. It meant that every day he walked past a specific set of dimensions, and a specific place on a shelf that was already accounted for. He found that he made different decisions in the presence of an object that had already been reserved. He turned down two things that year he would probably have taken.",
+       "links": [
+        {
+         "phrase": "an object that had already been reserved",
+         "ref": "Hebrews 11:7",
+         "book": "Hebrews",
+         "chapter": 11,
+         "verse": 7,
+         "moment": "Noah, warned of things not seen as yet, prepares an ark. The whole enterprise is enormous, public, and impossible to explain to anybody, and it is built entirely on the strength of something that has not started happening.",
+         "text": "By faith Noah, being warned of God of things not seen as yet, moved with fear, prepared an ark to the saving of his house; by the which he condemned the world, and became heir of the righteousness which is by faith."
+        }
+       ]
+      },
+      {
+       "text": "The picture came back from the printer four years later and it fit, which he says is the least surprising thing in the story, since he had measured for it. What he did not expect was how ordinary the day felt. He put it in, straightened it, and went to make coffee. He had assumed there would be a moment. There was no moment, and he has come to think that is what the whole thing was ever about, because a man who has been walking past the finished thing for four years does not get a moment. He gets a Tuesday, and a photograph in a frame.",
+       "links": [
+        {
+         "phrase": "he had measured for it",
+         "ref": "Hebrews 11:13",
+         "book": "Hebrews",
+         "chapter": 11,
+         "verse": 13,
+         "moment": "They all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them. Embraced is a physical word. They got their arms around a thing that had not arrived.",
+         "text": "These all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them, and confessed that they were strangers and pilgrims on the earth."
+        }
+       ]
       }
      ],
-     "parables": [],
-     "full": false
+     "parables": [
+      {
+       "phrase": "He put it on the shelf empty",
+       "ref": "Jeremiah 32:9",
+       "book": "Jeremiah",
+       "chapter": 32,
+       "verse": 9,
+       "moment": "Jeremiah buys a field, weighs out the silver, signs the deed and has it witnessed, while the army of Babylon is camped against the city and he himself is shut up in the court of the prison. He buys land nobody could reach.",
+       "text": "And I bought the field of Hanameel my uncle's son, that was in Anathoth, and weighed him the money, even seventeen shekels of silver."
+      },
+      {
+       "phrase": "an object that had already been reserved",
+       "ref": "Hebrews 11:7",
+       "book": "Hebrews",
+       "chapter": 11,
+       "verse": 7,
+       "moment": "Noah, warned of things not seen as yet, prepares an ark. The whole enterprise is enormous, public, and impossible to explain to anybody, and it is built entirely on the strength of something that has not started happening.",
+       "text": "By faith Noah, being warned of God of things not seen as yet, moved with fear, prepared an ark to the saving of his house; by the which he condemned the world, and became heir of the righteousness which is by faith."
+      },
+      {
+       "phrase": "he had measured for it",
+       "ref": "Hebrews 11:13",
+       "book": "Hebrews",
+       "chapter": 11,
+       "verse": 13,
+       "moment": "They all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them. Embraced is a physical word. They got their arms around a thing that had not arrived.",
+       "text": "These all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them, and confessed that they were strangers and pilgrims on the earth."
+      }
+     ],
+     "full": true
     }
    },
    {
