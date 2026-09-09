@@ -826,6 +826,151 @@ FULL = {
             },
         ],
     },
+
+    "Matthew 21:22": {
+        "paragraphs": [
+            {
+                "text": "She noticed she prayed in two completely different voices and that she had never chosen either one. The first was for small things, a parking space, a document turning up, somebody's flight landing on time, and it was casual and slightly amused and entirely certain. She used it without thinking. The odd thing, which took her years to see, is that the small things generally happened, and she had always filed that under coincidence because they were small.",
+                "links": [{
+                    "phrase": "she had never chosen either one",
+                    "ref": "Luke 12:7",
+                    "moment": "But even the very hairs of your head are all numbered. It is offered as a scale argument. If the trivial detail is counted then the category of things too small to bother him with does not exist, and the casual voice was never the wrong one.",
+                }],
+            },
+            {
+                "text": "The second voice came out for the thing she actually wanted, and it was another person entirely. It was careful. It explained the situation at length as though the details might tip a decision. It hedged at the end in case she was asking wrongly, and it went on much longer than the first one. When she finally listened to herself doing it she heard something she did not want to hear, which was that the length and the effort were doing the job that expectation was supposed to do. She was working hard in place of believing.",
+                "links": [{
+                    "phrase": "the length and the effort were doing the job that expectation was supposed to do",
+                    "ref": "1 Kings 18:28",
+                    "moment": "The prophets of Baal cry from morning until noon, then leap on the altar, then cut themselves with knives until the blood gushes out. Nobody could accuse them of not trying. The effort escalates all day in the place where confidence should have been.",
+                }],
+            },
+            {
+                "text": "So she started using the small voice for the big thing. She says it felt disrespectful for about a month, close to flippant, as though she were not taking her own life seriously enough. What she found underneath the discomfort was the actual belief she had been carrying, which was that God handled parking spaces and did not handle this. Saying it in the light voice made that assumption impossible to keep holding. The situation took another year to move. Her part of it changed the first week.",
+                "links": [{
+                    "phrase": "God handled parking spaces and did not handle this",
+                    "ref": "John 11:42",
+                    "moment": "And I knew that thou hearest me always, said out loud at a tomb in front of a crowd. He gives the reason for saying it: because of the people which stand by. The certainty was not new. It was being made audible.",
+                }],
+            },
+        ],
+    },
+
+    "Ephesians 3:20": {
+        "paragraphs": [
+            {
+                "text": "He asked for enough to cover the month. That is what he prayed, in those words, on the first Sunday of every month for most of a decade, because it felt like a reasonable thing to ask of a busy God with famine and war on his desk. The month always got covered. Not comfortably, and never early, but it got covered, sometimes by an amount so exact that he laughed out loud when he saw it. He took that as confirmation that he was asking correctly.",
+                "links": [{
+                    "phrase": "an amount so exact that he laughed out loud",
+                    "ref": "2 Kings 4:3",
+                    "moment": "A widow with one pot of oil is told to borrow vessels of her neighbours, and specifically, borrow not a few. She pours until every borrowed vessel is full and then the oil stops. It stops because she has run out of containers, not out of oil.",
+                }],
+            },
+            {
+                "text": "It took him years to notice what he had never once done. He had never asked for the year. Not out of humility exactly, though that is what he would have called it, but because somewhere he had settled the size of what was available to a man like him and had stopped testing the edge of it. His wife pointed out that his prayer had not changed since before their children could walk, and that their needs had. He said he would think about it, and he did, for a long time, and it made him uncomfortable in a way he could not name.",
+                "links": [{
+                    "phrase": "had settled the size of what was available to a man like him",
+                    "ref": "Exodus 16:18",
+                    "moment": "The manna measured out and he that gathered much had nothing over, and he that gathered little had no lack. Exactly enough, every single day, for forty years. It is a miracle and it is also a ceiling, and they were meant to leave it eventually.",
+                }],
+            },
+            {
+                "text": "When he finally changed it, the surprise was how little the asking cost. It was the same sentence with a different number in it and it took no more faith to say, no more time, no more breath. He had spent a decade assuming that the larger request would be harder to make and it was simply longer to wait for. He is careful about what he claims happened next. What he says is that the ceiling he had been living under was one he had built himself, and that nobody had ever confirmed it was there.",
+                "links": [{
+                    "phrase": "the same sentence with a different number in it",
+                    "ref": "1 Chronicles 4:10",
+                    "moment": "Jabez asks that God would bless him indeed and enlarge his coast. The whole prayer is two lines in a genealogy and asks flatly for more territory. The passage records, without comment or apology, that God granted him that which he requested.",
+                }],
+            },
+        ],
+    },
+
+    "Psalms 37:4": {
+        "paragraphs": [
+            {
+                "text": "She had the list written down and she worked it like a second job. Nine items, reviewed on Sunday nights, each with actions underneath it and a rough date. She prayed over the list. She read about the list. She was disciplined in a way that impressed everybody who knew about it and she was, by the end of the second year, thoroughly miserable and no closer to any of it. She could not work out what she was doing wrong, because by every measure she had been told about, she was doing it right.",
+                "links": [{
+                    "phrase": "she worked it like a second job",
+                    "ref": "Luke 10:40",
+                    "moment": "Martha is cumbered about much serving and comes and asks him to make her sister help. Nothing she is doing is wrong. She is hosting him. The complaint is that she is doing it in a state he describes as careful and troubled about many things.",
+                }],
+            },
+            {
+                "text": "An older woman at her church told her to put the list in a drawer for a month and just enjoy Him, and she went home fairly annoyed about it. It sounded like a dodge, the sort of thing people say when they have nothing practical to offer. She did it anyway, mostly to prove it would not work. The first fortnight was genuinely difficult and she kept opening the drawer. By the third week she noticed that her Sunday nights had become something she looked forward to rather than an audit, which she had not experienced in two years.",
+                "links": [{
+                    "phrase": "just enjoy Him",
+                    "ref": "Luke 10:42",
+                    "moment": "One thing is needful, and Mary hath chosen that good part, which shall not be taken away from her. Mary is doing nothing useful in that room. She is sitting on the floor listening, and it is named as the better use of the afternoon.",
+                }],
+            },
+            {
+                "text": "When she took the list back out at the end of the month, two of the nine items had stopped mattering, which she found more disorienting than if they had arrived. One of the remaining seven had come in without her working on it at all. She still cannot tell you which of those was the bigger change and she has stopped trying to rank them. What she says now is that she had spent two years asking for the contents of her heart while never once examining what was in it, and that the month in the drawer was the first time anybody had checked.",
+                "links": [{
+                    "phrase": "two of the nine items had stopped mattering",
+                    "ref": "Psalms 73:25",
+                    "moment": "Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. Written by a man who has just finished describing at length how much he envied the prosperity of the wicked. The desire did not get satisfied. It got replaced.",
+                }],
+            },
+        ],
+    },
+
+    "Matthew 8:13": {
+        "paragraphs": [
+            {
+                "text": "He put in the application for his son's school place and then he supervised it for eleven months. He called the office most weeks. He knew the names of three people in admissions and their days off. He would draft an email, delete it, rewrite it more casually and send it anyway, and afterwards he would feel the specific shame of a man who has made himself a small problem to somebody. His wife asked him once what he thought the calls were doing. He said he was keeping it live. He knew as he said it that this was not an answer.",
+                "links": [{
+                    "phrase": "he supervised it for eleven months",
+                    "ref": "Genesis 16:2",
+                    "moment": "Sarai, ten years into waiting on a promise, tells Abram to go in to her handmaid, and says plainly, the LORD hath restrained me from bearing. She is not faithless. She is taking an outcome into her own hands because the waiting has become unbearable.",
+                }],
+            },
+            {
+                "text": "What changed was a conversation with a man at work who had spent twenty years in the army. He listened to the whole thing and said that in his experience a request either carried weight or it did not, and that the calls were not adding weight, they were telling everybody involved that the man making them did not believe it had landed. He said a request you keep checking on is a request you have withdrawn and reissued a hundred times. He did not say it unkindly and it took about a week to stop stinging.",
+                "links": [{
+                    "phrase": "a request either carried weight or it did not",
+                    "ref": "Matthew 8:9",
+                    "moment": "The officer explains himself: for I am a man under authority, having soldiers under me, and I say to this man, Go, and he goeth. He is not describing faith in the abstract. He is describing his job, where a word given once is the whole of the matter.",
+                }],
+            },
+            {
+                "text": "He stopped calling. It was harder than he expected and for the first three weeks he had to physically leave his phone in another room on Tuesdays, which is when he used to ring. The place came through in March. He says the strange part is that he cannot point to anything the silence did, and he does not claim it did anything, because he has no way to know. What he knows is what it did to him. He stopped spending his Tuesdays as a man waiting for a verdict on his son.",
+                "links": [{
+                    "phrase": "He stopped calling",
+                    "ref": "John 4:50",
+                    "moment": "Jesus tells a nobleman, go thy way, thy son liveth. The man is in Cana and his son is in Capernaum, a day away. The text says the man believed the word that Jesus had spoken unto him, and he went his way, and he does not hurry.",
+                }],
+            },
+        ],
+    },
+
+    "Mark 10:27": {
+        "paragraphs": [
+            {
+                "text": "The number he needed was larger than anything he had earned in a year and he did the arithmetic constantly. He did it in the car, in bed, in the middle of conversations, and every time he did it, it came out the same way, which is to say it could not be done. He was not being pessimistic and the sums were correct. He had a spreadsheet and it was honest work. What he did not notice for a long time is that he ran the numbers most often on the days he felt worst, and that the result was always the same because the question always was.",
+                "links": [{
+                    "phrase": "he ran the numbers most often on the days he felt worst",
+                    "ref": "John 6:7",
+                    "moment": "Philip is asked where they will buy bread for the crowd and answers immediately with a costing: two hundred pennyworth of bread is not sufficient for them, that every one of them may take a little. His maths is right. He has been asked a different question.",
+                }],
+            },
+            {
+                "text": "What he was proving over and over was that he could not do it, and nobody had ever disputed that. It took a friend saying the sentence back to him for him to hear it. Of course you cannot do it on your own, the friend said, you have told me that eleven times, so what are you actually asking. He had no answer ready. He realised that for two years the only question he had put to God was a request for confirmation that the door was shut, and that he had been receiving that confirmation reliably.",
+                "links": [{
+                    "phrase": "a request for confirmation that the door was shut",
+                    "ref": "Numbers 11:22",
+                    "moment": "Moses, told the people will have meat, answers with logistics: shall the flocks and the herds be slain for them, to suffice them? or shall all the fish of the sea be gathered together for them? He is arguing supply chain with the one making the promise.",
+                }],
+            },
+            {
+                "text": "He stopped running the numbers, not out of faith exactly, but because he could not stand hearing the answer again. Within about six weeks two things happened that he could not have engineered. A colleague offered to go in with him on the part he could not carry alone, and a piece of work he had written off turned out to be worth more than he had valued it. Neither of those was in the spreadsheet, because he had only been costing what he already had. He says he had been doing sums about a room while standing in a much larger building.",
+                "links": [{
+                    "phrase": "he had only been costing what he already had",
+                    "ref": "John 6:9",
+                    "moment": "Andrew says there is a lad here which hath five barley loaves and two small fishes, and then adds, but what are they among so many. He has found the thing that matters and dismissed it in the same sentence, because he is still measuring it against the size of the problem.",
+                }],
+            },
+        ],
+    },
 }
 
 
