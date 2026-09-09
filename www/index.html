@@ -83,8 +83,10 @@ body{
 }
 #bg{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0}
 .scrim{position:absolute;inset:0;background:var(--night);opacity:0;transition:opacity .7s ease;pointer-events:none;z-index:1}
-#app[data-beat="2"] .scrim{opacity:.34}
-#app[data-beat="3"] .scrim{opacity:.5}
+#app[data-stage="p1"] .scrim{opacity:.34}
+#app[data-stage="rest"] .scrim{opacity:.52}
+#app[data-stage="parables"] .scrim{opacity:.58}
+#app[data-stage="verse"] .scrim{opacity:.6}
 
 .layer{position:relative;z-index:2;display:flex;flex-direction:column;flex:1;min-height:0}
 
@@ -110,6 +112,23 @@ body{
 }
 .musicbtn[aria-pressed="true"]{color:var(--brass);border-color:var(--brass)}
 .musicbtn:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.musicrow{
+  display:flex;align-items:center;gap:9px;margin-top:11px;
+  background:var(--hairline);border:1px solid var(--hairline);
+  border-radius:99px;padding:6px 8px 6px 6px;
+}
+.mctrl{
+  flex:0 0 auto;width:26px;height:26px;border-radius:99px;cursor:pointer;line-height:1;
+  border:1px solid var(--hairline);background:none;color:var(--bone);
+  font-size:11px;display:grid;place-items:center;transition:.15s ease;
+}
+.mctrl:hover{border-color:var(--brass);color:var(--brass)}
+.mctrl:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.mtitle{
+  flex:1;min-width:0;font-size:11px;letter-spacing:.03em;color:var(--dim);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.mtitle b{color:var(--brass);font-weight:700}
 .skinrow{display:flex;gap:5px;margin-top:11px}
 .skinswatch{
   flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;
@@ -158,8 +177,8 @@ body{
   font-size:clamp(30px,8.2vw,42px);line-height:1.13;letter-spacing:-.012em;text-wrap:balance;
   transition:font-size .55s cubic-bezier(.2,.7,.2,1),color .5s ease;
 }
-#app[data-beat="2"] .quote,#app[data-beat="3"] .quote{font-size:clamp(19px,4.8vw,23px);line-height:1.24;color:var(--dim)}
-#app[data-beat="2"] .quotewrap,#app[data-beat="3"] .quotewrap{justify-content:flex-start;padding-top:18px}
+#app:not([data-stage="quote"]) .quote{font-size:clamp(17px,4.3vw,21px);line-height:1.25;color:var(--dim)}
+#app:not([data-stage="quote"]) .quotewrap{justify-content:flex-start;padding-top:16px;flex:0 0 auto}
 
 .cue{
   margin:20px 0 0;display:flex;align-items:center;gap:9px;
@@ -168,7 +187,8 @@ body{
 }
 .cue .pulse{width:6px;height:6px;border-radius:99px;background:var(--brass);animation:breathe 2.6s ease-in-out infinite}
 @keyframes breathe{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
-#app[data-beat="3"] .cue{opacity:0;pointer-events:none}
+#app[data-stage="verse"] .cue{opacity:0;pointer-events:none}
+#app:not([data-stage="quote"]) .cue{margin-top:12px}
 
 /* ---------------- story ---------------- */
 .story{
@@ -180,7 +200,7 @@ body{
   transform:translateY(110%);opacity:0;
   transition:transform .62s cubic-bezier(.2,.75,.2,1),opacity .4s ease;
 }
-#app[data-beat="2"] .story,#app[data-beat="3"] .story{transform:translateY(0);opacity:1}
+#app:not([data-stage="quote"]) .story{transform:translateY(0);opacity:1}
 .storyhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .storyhead .who{font-weight:700;font-size:13.5px;color:var(--bone)}
 .storyhead .where{font-size:11px;color:var(--dim);letter-spacing:.05em}
@@ -193,7 +213,30 @@ body{
   max-height:min(200px,26vh);overflow:auto;
   transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .35s ease,margin .5s ease;
 }
-#app[data-beat="3"] .storybody{max-height:0;opacity:0;margin-top:0;overflow:hidden}
+/* One paragraph at first, then the whole thing in a pane you can scroll,
+   then it folds back to a name when the scripture comes up. */
+#app[data-stage="rest"] .storybody,
+#app[data-stage="parables"] .storybody{max-height:min(560px,64vh)}
+#app[data-stage="verse"] .storybody{max-height:0;opacity:0;margin-top:0;overflow:hidden}
+.storybody p{margin:0 0 11px}
+.storybody p:last-child{margin-bottom:0}
+.storybody .more{display:none}
+#app[data-stage="rest"] .storybody .more,
+#app[data-stage="parables"] .storybody .more{display:block}
+
+.parables{display:none;margin-top:15px;padding-top:13px;border-top:1px solid rgba(160,140,90,.3)}
+#app[data-stage="parables"] .parables{display:block}
+.parables h4{
+  margin:0 0 10px;font-family:var(--sans);font-size:9px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--brass);
+}
+.parable{margin:0 0 14px;padding-left:11px;border-left:2px solid rgba(160,140,90,.35)}
+.parable:last-child{margin-bottom:0}
+.parable .pt{
+  display:block;font-family:var(--serif);font-size:16px;font-weight:500;
+  color:var(--bone);margin-bottom:3px;letter-spacing:-.005em;
+}
+.parable .pb{margin:0;font-size:12.5px;line-height:1.6;color:var(--storytext)}
 
 /* ---------------- verse ---------------- */
 .versecard{
@@ -203,7 +246,7 @@ body{
   transition:transform .66s cubic-bezier(.2,.75,.2,1);
   box-shadow:0 -22px 44px -20px rgba(0,0,0,.6);
 }
-#app[data-beat="3"] .versecard{transform:translateY(0)}
+#app[data-stage="verse"] .versecard{transform:translateY(0)}
 .versecard:focus-visible{outline:2px solid var(--parchmute);outline-offset:-4px}
 .restson{
   margin:0 0 11px;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
@@ -299,7 +342,7 @@ body{
 </head>
 <body>
 
-<div id="app" data-beat="1">
+<div id="app" data-stage="quote">
   <canvas id="bg"></canvas>
   <div class="scrim"></div>
   <div class="loading" id="loading">Fig</div>
@@ -316,6 +359,11 @@ body{
           <button class="skinbtn" type="button" id="skinBtn"
                   aria-expanded="false" aria-controls="skinRow" aria-label="Change the look"></button>
         </span>
+      </div>
+      <div class="musicrow" id="musicRow" hidden>
+        <button class="mctrl" type="button" id="mPlay" aria-label="Play or pause">&#9654;</button>
+        <button class="mctrl" type="button" id="mSkip" aria-label="Next track">&#9197;</button>
+        <span class="mtitle" id="mTitle">Chopin</span>
       </div>
       <div class="skinrow" id="skinRow" hidden></div>
       <div class="tabs" role="tablist" id="tabs"></div>
@@ -334,7 +382,8 @@ body{
           <span class="where" id="where"></span>
           <span class="badge" id="badge"></span>
         </div>
-        <p class="storybody" id="storyBody"></p>
+        <div class="storybody" id="storyBody"></div>
+        <div class="parables" id="parables"></div>
       </div>
 
       <div class="versecard" id="verseCard">
@@ -395,12 +444,14 @@ var content = null, bible = null, bibleLoading = null;
    used for previews bakes them into window.FIG_INLINE instead. */
 function getJSON(name){
   if (window.FIG_INLINE && window.FIG_INLINE[name]) return Promise.resolve(window.FIG_INLINE[name]);
-  return fetch("data/" + name + ".json").then(function(r){
+  /* no-cache revalidates instead of trusting a stale copy, so a reader who
+     opened the app yesterday still gets today's cards. It costs one 304. */
+  return fetch("data/" + name + ".json", { cache: "no-cache" }).then(function(r){
     if (!r.ok) throw new Error(r.status);
     return r.json();
   });
 }
-var stream = STREAMS[0], beat = 1, dayIndex = 0;
+var stream = STREAMS[0], stageIdx = 0, dayIndex = 0;
 var state = loadState();
 document.documentElement.setAttribute("data-skin", state.skin || "bloom");
 var reader = { book: null, chapter: 1, hit: 0 };
@@ -446,14 +497,39 @@ function cardFor(name){
 }
 function cardId(name){ var c = cardFor(name); return c ? name + ":" + c.ref : name; }
 
-function setBeat(n){
-  beat = n;
-  document.getElementById("app").setAttribute("data-beat", String(n));
-  if (n >= 3){
+/* Which stages a card actually has. A short card has no second paragraph and
+   no parables, so it goes quote, story, verse and never shows an empty step. */
+function stagesFor(c){
+  var out = ["quote"], st = c && c.story;
+  if (st && st.paragraphs && st.paragraphs.length > 1){ out.push("p1"); out.push("rest"); }
+  else if (st) out.push("rest");
+  if (st && st.parables && st.parables.length) out.push("parables");
+  out.push("verse");
+  return out;
+}
+
+function setStage(i){
+  var plan = stagesFor(cardFor(stream));
+  stageIdx = Math.max(0, Math.min(i, plan.length - 1));
+  var name = plan[stageIdx];
+  document.getElementById("app").setAttribute("data-stage", name);
+  document.getElementById("storyBody").scrollTop = 0;
+  if (name === "verse"){
     state.seen[cardId(stream)] = 1;
     saveState();
     paintTabs();
   }
+  paintCue();
+}
+
+function paintCue(){
+  var plan = stagesFor(cardFor(stream));
+  var next = plan[stageIdx + 1];
+  var label = { p1: "Tap for the story underneath",
+                rest: "Tap to read the rest",
+                parables: "Tap for what it is like",
+                verse: "Tap for the verse it rests on" }[next] || "";
+  document.getElementById("cueText").textContent = label;
 }
 
 /* ---------------- music ----------------
@@ -492,26 +568,40 @@ function playNext(){
   music.el.volume = 0;
   music.started = true;
   var p = music.el.play();
-  if (p && p.catch) p.catch(function(){ music.started = false; });  /* blocked until a tap */
+  if (p && p.catch) p.catch(function(){ music.started = false; paintMusic(); });
   fadeTo(VOLUME, 2500);
+  paintMusic();
 }
 
-function setMusic(on, announce){
+function paintMusic(){
+  var playing = state.music && music.started && !music.el.paused;
+  document.getElementById("mPlay").innerHTML = playing ? "&#10074;&#10074;" : "&#9654;";
+  document.getElementById("musicBtn").setAttribute("aria-pressed", playing ? "true" : "false");
+  document.getElementById("mTitle").innerHTML =
+    music.title ? ("<b>Chopin</b> &middot; " + music.title) : "Chopin";
+}
+
+function setMusic(on){
   state.music = on;
   saveState();
-  var b = document.getElementById("musicBtn");
-  b.setAttribute("aria-pressed", on ? "true" : "false");
   if (!music.tracks.length) return;
 
   if (on){
     if (!music.started) playNext();
     else { music.el.play(); fadeTo(VOLUME, 1200); }
-    if (announce) toast(music.title || "Music on");
   } else {
-    fadeTo(0, 700);
-    setTimeout(function(){ music.el.pause(); }, 780);
-    if (announce) toast("Music off");
+    fadeTo(0, 600);
+    setTimeout(function(){ music.el.pause(); paintMusic(); }, 660);
   }
+  paintMusic();
+}
+
+function skipTrack(){
+  if (!music.tracks.length) return;
+  state.music = true;
+  saveState();
+  playNext();
+  paintMusic();
 }
 
 function initMusic(){
@@ -527,11 +617,23 @@ function initMusic(){
 
     var b = document.getElementById("musicBtn");
     b.hidden = false;
-    b.setAttribute("aria-pressed", state.music ? "true" : "false");
     b.addEventListener("click", function(e){
       e.stopPropagation();
-      setMusic(!state.music, true);
+      var row = document.getElementById("musicRow");
+      row.hidden = !row.hidden;
     });
+
+    document.getElementById("mPlay").addEventListener("click", function(e){
+      e.stopPropagation();
+      setMusic(!(state.music && music.started && !music.el.paused));
+    });
+    document.getElementById("mSkip").addEventListener("click", function(e){
+      e.stopPropagation();
+      skipTrack();
+    });
+    music.el.addEventListener("play", paintMusic);
+    music.el.addEventListener("pause", paintMusic);
+    paintMusic();
 
     /* Audio cannot start until the reader has touched the page. */
     document.addEventListener("pointerdown", function once(){
@@ -590,7 +692,7 @@ function paintTabs(){
     b.addEventListener("click", function(){
       if (name === stream) return;
       stream = name;
-      setBeat(1);
+      setStage(0);
       paintCard();
       paintTabs();
     });
@@ -612,19 +714,48 @@ function paintCard(){
   document.getElementById("glossToggle").setAttribute("aria-expanded", "false");
 
   var pane = document.getElementById("storyPane");
-  var hasStory = !!c.story;
-  pane.hidden = !hasStory;
-  document.getElementById("cueText").textContent =
-    hasStory ? "Tap for the story underneath" : "Tap for the verse underneath";
+  var st = c.story;
+  pane.hidden = !st;
 
-  if (hasStory){
-    var s = c.story;
-    document.getElementById("badge").textContent = s.badge || "Parable";
-    document.getElementById("storyBody").textContent = s.body;
+  var body = document.getElementById("storyBody");
+  var pars = document.getElementById("parables");
+  body.innerHTML = "";
+  pars.innerHTML = "";
+
+  if (st){
+    document.getElementById("badge").textContent = st.badge || "Parable";
+    (st.paragraphs || []).forEach(function(text, i){
+      var p = document.createElement("p");
+      if (i > 0) p.className = "more";
+      p.textContent = text;
+      body.appendChild(p);
+    });
+
+    if ((st.parables || []).length){
+      var h = document.createElement("h4");
+      h.textContent = "Three ways it has looked";
+      pars.appendChild(h);
+      st.parables.forEach(function(pb){
+        var wrap = document.createElement("div");
+        wrap.className = "parable";
+        var t = document.createElement("span");
+        t.className = "pt";
+        t.textContent = pb.title || "";
+        var b = document.createElement("p");
+        b.className = "pb";
+        b.textContent = pb.body;
+        if (pb.title) wrap.appendChild(t);
+        wrap.appendChild(b);
+        pars.appendChild(wrap);
+      });
+    }
+
     var who = document.getElementById("who"), where = document.getElementById("where");
-    who.textContent = s.who || "";   who.hidden = !s.who;
-    where.textContent = s.where || ""; where.hidden = !s.where;
+    who.textContent = st.who || "";   who.hidden = !st.who;
+    where.textContent = st.where || ""; where.hidden = !st.where;
   }
+
+  paintCue();
 
   var star = document.getElementById("saveBtn");
   var isSaved = state.saved.indexOf(cardId(stream)) >= 0;
@@ -632,12 +763,9 @@ function paintCard(){
   star.textContent = isSaved ? "Saved" : "Save";
 }
 
-/* A card with no story has two beats, not three. */
 function advance(){
-  var c = cardFor(stream);
-  var last = (c && c.story) ? 3 : 2;
-  if (beat >= last){ setBeat(1); return; }
-  setBeat(c && c.story ? beat + 1 : 3);
+  var plan = stagesFor(cardFor(stream));
+  setStage(stageIdx + 1 >= plan.length ? 0 : stageIdx + 1);
 }
 
 /* ---------------- reader ---------------- */

@@ -495,6 +495,45 @@ CARDS = [
 # touching a line of the card that is already right. All of these are Parables,
 # so none of them carries a name. A real testimony goes in CARDS with the
 # "Sent in" badge and a first name and city.
+# Full length stories: 3 to 5 paragraphs of 5 to 7 sentences, plus 2 or 3
+# parables that light up different moments in the story. The app reveals them in
+# stages, one paragraph, then the rest, then the parables.
+#
+# As a card is written to full length it moves out of EXTRA_STORIES below and
+# into here. Both shapes work at once, so the app is never broken half way
+# through the rewrite, and seed.py reports how many are still short.
+FULL = {
+
+    "Mark 11:24": {
+        "paragraphs": [
+            "She had been turned down for the apartment twice, and the second refusal came by voicemail while she was standing in the queue at the bank. The woman on the message was kind about it, which somehow made it worse. She had done everything right both times. She had the deposit, the references, the letter from her manager, and none of it had counted for anything against forty other people who also had those. She deleted the voicemail in the car and sat there for a while without turning the key.",
+
+            "What she stopped doing that month was asking. Not out of bitterness, and not because she had given up on the place, but because she had noticed something about the way she asked. Every time she prayed about it there was a small grinding sound underneath the words, a sound like somebody pushing a door that opens the other way. She could hear that she did not expect anything. So she stopped, and instead she started going to sleep in the apartment.",
+
+            "That is the only way she knows how to say it. She would lie down at night in her mother's spare room and put herself in the other place, and stay there until it was ordinary. She knew which corner the couch went in, because there was only one wall long enough. She knew that the morning came through the window on the left, because she had been shown the unit in March and the light had been on her hands. She was not picturing herself happy in it. She was picturing herself bored in it, putting a mug down, looking for a charger, and that turned out to be the difference.",
+
+            "It went on much longer than she expected. There were six weeks where nothing happened at all and she kept doing it anyway, mostly because stopping would have felt like a decision she did not want to make. Then the manager called about a unit that had never been listed, in the same building, one floor up. She heard herself accept it in a voice that surprised her, because it was not the voice of someone receiving good news. It was the voice of someone confirming an arrangement.",
+
+            "She says the strangest part was walking in. There was no rush of relief, no moment of it finally happening, and for a day or two she wondered whether something was wrong with her. It came to her later that the feeling she was missing is the feeling of getting something you did not have. She had been living there for two months. All that was left was to bring the boxes.",
+        ],
+        "parables": [
+            {
+                "title": "The man who cut the key first",
+                "body": "There is an old account of a man who had a key cut for a house he did not own. He carried it for most of a year and people who saw it on his ring thought it was for his brother's place. He was not deluded and he could tell you exactly whose name was on the deed. He simply refused to keep his hands empty while he waited, and he said that a man with a key in his pocket negotiates differently from a man without one. Whether the key ever opened that door is not really the point of the story. It changed how he walked up to it.",
+            },
+            {
+                "title": "Seven times toward the sea",
+                "body": "Elijah told his servant to go and look toward the sea, and the servant went and came back and said there was nothing. He was sent again, and again, and there was nothing each time, until the seventh, when he reported a cloud the size of a man's hand. The remarkable thing in that account is not the cloud. It is that Elijah had already told the king to go and eat, because he could hear the sound of abundance of rain, and at that point the sky was completely clear. He was not waiting to find out. He was waiting for the arrival of something already settled.",
+            },
+            {
+                "title": "The table set on Thursday",
+                "body": "A woman in a village story used to lay an extra place at her table on the night before her son came home on leave, and one year she laid it before the letter arrived confirming he would come. Her neighbours thought it was superstition and told her so. She said it was nothing of the kind. She said the plate was not there to make him come, it was there because she had already decided what kind of week this was going to be, and a person who has decided that sets the table accordingly. He came on the Friday.",
+            },
+        ],
+    },
+}
+
+
 EXTRA_STORIES = {
 
     # ---------------------------------------------------------- receive
@@ -766,10 +805,22 @@ def main():
             "quote": quote,
             "gloss": gloss,
         }
-        if story:
-            card["story"] = {"badge": story[0], "body": story[1]}
+        # Three sources, newest shape first. Everything ends up as paragraphs
+        # plus parables so the app only has to understand one shape.
+        if ref in FULL:
+            f = FULL[ref]
+            card["story"] = {
+                "badge": "Parable",
+                "paragraphs": f["paragraphs"],
+                "parables": f.get("parables", []),
+                "full": True,
+            }
+        elif story:
+            card["story"] = {"badge": story[0], "paragraphs": [story[1]],
+                             "parables": [], "full": False}
         elif ref in EXTRA_STORIES:
-            card["story"] = {"badge": "Parable", "body": EXTRA_STORIES[ref]}
+            card["story"] = {"badge": "Parable", "paragraphs": [EXTRA_STORIES[ref]],
+                             "parables": [], "full": False}
         streams.setdefault(stream, []).append(card)
 
     out = {
@@ -781,18 +832,24 @@ def main():
         json.dump(out, fh, ensure_ascii=False, indent=1)
 
     shortest = min(len(v) for v in streams.values())
-    gaps = []
+    todo = []
     for name in ("receive", "gratitude", "restoration"):
         cards = streams.get(name, [])
-        stories = sum(1 for c in cards if "story" in c)
-        gaps += [(name, c["ref"]) for c in cards if "story" not in c]
-        flag = "" if stories == len(cards) else "   <- %d still bare" % (len(cards) - stories)
-        print("%-12s %2d cards, %2d with a story%s" % (name, len(cards), stories, flag))
-    print("\n%d days before anything repeats -> %s" % (shortest, OUT))
-    if gaps:
-        print("\nno story yet (%d):" % len(gaps))
-        for name, ref in gaps:
-            print("  %-12s %s" % (name, ref))
+        full = [c for c in cards if c.get("story", {}).get("full")]
+        todo += [(name, c["ref"]) for c in cards if not c.get("story", {}).get("full")]
+        print("%-12s %2d cards, %2d written to full length, %2d still short"
+              % (name, len(cards), len(full), len(cards) - len(full)))
+
+    words = sum(len(p.split()) for c in
+                (c for v in streams.values() for c in v)
+                for p in c["story"]["paragraphs"])
+    words += sum(len(pb["body"].split()) for c in
+                 (c for v in streams.values() for c in v)
+                 for pb in c["story"]["parables"])
+    print("\n%d days before anything repeats, %s words of story -> %s"
+          % (shortest, "{:,}".format(words), OUT))
+    if todo:
+        print("still short (%d of %d)" % (len(todo), sum(len(v) for v in streams.values())))
 
 
 if __name__ == "__main__":
