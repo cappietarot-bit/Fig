@@ -100,3 +100,34 @@ because that orphans their data.
 3. Spanish
 4. Capacitor wrapper and the APK
 5. Paid archive
+
+## Music
+
+Twenty Chopin nocturnes and preludes play in the background, shuffled so all
+twenty go by before any repeats. Build or rebuild them with:
+
+```
+"C:\Users\levia\AppData\Local\Programs\Python\Python312\python.exe" tools/music.py
+```
+
+That downloads the originals once into `data-src/audio/` (gitignored, about
+100 MB), loudness normalises them so no track jumps against another, and writes
+mono AAC into `www/audio/` at roughly 1.7 MB each. Only the playing track is
+ever downloaded by a listener.
+
+**Source and licence.** Musopen's Complete Chopin Collection, released under
+CC0 1.0, which puts the *recordings* in the public domain and not only the
+compositions. That distinction matters: a Chopin nocturne is free to use, but
+most recordings of one are owned by the performer and the label. Anything added
+later has to clear the same bar. `www/data/music.json` carries the source and
+licence with the track list.
+
+The music does not play in the Artifact preview, because that sandbox blocks
+media loaded from anywhere. It works on the Pages site and will work in the app.
+
+## Live
+
+The public site is served by GitHub Pages from `main` at the repository root,
+where `index.html` redirects into `www/`.
+
+https://cappietarot-bit.github.io/Fig/

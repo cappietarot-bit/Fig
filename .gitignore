@@ -3,3 +3,6 @@ fig-single.html
 
 __pycache__/
 *.pyc
+
+# Original downloads, ~100 MB, re-fetched by tools/music.py on demand
+data-src/audio/

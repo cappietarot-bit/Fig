@@ -103,6 +103,13 @@ body{
   background:linear-gradient(135deg,var(--brass) 0 50%,var(--night2) 50%);
 }
 .skinbtn:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.musicbtn{
+  width:19px;height:19px;border-radius:99px;padding:0;cursor:pointer;line-height:1;
+  border:1px solid var(--hairline);background:none;color:var(--dim);
+  font-size:11px;display:grid;place-items:center;transition:.16s ease;
+}
+.musicbtn[aria-pressed="true"]{color:var(--brass);border-color:var(--brass)}
+.musicbtn:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
 .skinrow{display:flex;gap:5px;margin-top:11px}
 .skinswatch{
   flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;
@@ -304,6 +311,8 @@ body{
         <span id="dateLabel"></span>
         <span class="topright">
           <span class="streak">Day <b id="streakNum">1</b> in a row</span>
+          <button class="musicbtn" type="button" id="musicBtn"
+                  aria-pressed="false" aria-label="Background music" hidden>&#9834;</button>
           <button class="skinbtn" type="button" id="skinBtn"
                   aria-expanded="false" aria-controls="skinRow" aria-label="Change the look"></button>
         </span>
@@ -398,7 +407,7 @@ var reader = { book: null, chapter: 1, hit: 0 };
 
 /* ---------------- state ---------------- */
 function loadState(){
-  var base = { streak: 0, lastDay: null, saved: [], seen: {}, skin: "bloom" };
+  var base = { streak: 0, lastDay: null, saved: [], seen: {}, skin: "bloom", music: true };
   try {
     var raw = JSON.parse(localStorage.getItem(KEY));
     if (raw && typeof raw === "object"){
@@ -445,6 +454,93 @@ function setBeat(n){
     saveState();
     paintTabs();
   }
+}
+
+/* ---------------- music ----------------
+   Twenty Chopin nocturnes and preludes from Musopen's CC0 collection, played on
+   a shuffle bag so all twenty go by before any repeats. Browsers refuse to start
+   audio before the reader has touched the page, so the first tap starts it. */
+var VOLUME = 0.32;
+var music = { tracks: [], bag: [], el: null, title: "", fade: null, started: false };
+
+function shuffleNext(){
+  if (!music.bag.length){
+    music.bag = music.tracks.map(function(_, i){ return i; });
+    for (var i = music.bag.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = music.bag[i]; music.bag[i] = music.bag[j]; music.bag[j] = t;
+    }
+  }
+  return music.bag.pop();
+}
+
+function fadeTo(target, ms){
+  clearInterval(music.fade);
+  var el = music.el, from = el.volume, t0 = Date.now();
+  music.fade = setInterval(function(){
+    var k = Math.min(1, (Date.now() - t0) / ms);
+    el.volume = Math.max(0, Math.min(1, from + (target - from) * k));
+    if (k >= 1) clearInterval(music.fade);
+  }, 60);
+}
+
+function playNext(){
+  var t = music.tracks[shuffleNext()];
+  if (!t) return;
+  music.title = t.title;
+  music.el.src = "audio/" + encodeURIComponent(t.file);
+  music.el.volume = 0;
+  music.started = true;
+  var p = music.el.play();
+  if (p && p.catch) p.catch(function(){ music.started = false; });  /* blocked until a tap */
+  fadeTo(VOLUME, 2500);
+}
+
+function setMusic(on, announce){
+  state.music = on;
+  saveState();
+  var b = document.getElementById("musicBtn");
+  b.setAttribute("aria-pressed", on ? "true" : "false");
+  if (!music.tracks.length) return;
+
+  if (on){
+    if (!music.started) playNext();
+    else { music.el.play(); fadeTo(VOLUME, 1200); }
+    if (announce) toast(music.title || "Music on");
+  } else {
+    fadeTo(0, 700);
+    setTimeout(function(){ music.el.pause(); }, 780);
+    if (announce) toast("Music off");
+  }
+}
+
+function initMusic(){
+  music.el = new Audio();
+  music.el.preload = "none";
+  music.el.addEventListener("ended", function(){ if (state.music) playNext(); });
+  /* One dead track must not end the music for good. */
+  music.el.addEventListener("error", function(){ if (state.music && music.started) playNext(); });
+
+  return getJSON("music").then(function(d){
+    music.tracks = (d && d.tracks) || [];
+    if (!music.tracks.length) return;
+
+    var b = document.getElementById("musicBtn");
+    b.hidden = false;
+    b.setAttribute("aria-pressed", state.music ? "true" : "false");
+    b.addEventListener("click", function(e){
+      e.stopPropagation();
+      setMusic(!state.music, true);
+    });
+
+    /* Audio cannot start until the reader has touched the page. */
+    document.addEventListener("pointerdown", function once(){
+      document.removeEventListener("pointerdown", once);
+      if (state.music && !music.started) playNext();
+    });
+  }).catch(function(){
+    /* No manifest, no music, no error in the reader's face. */
+  });
 }
 
 var SKINS = [
@@ -700,6 +796,7 @@ getJSON("content")
     document.getElementById("streakNum").textContent = state.streak;
 
     applySkin(state.skin || "bloom");
+    initMusic();
     paintTabs();
     paintCard();
     wire();

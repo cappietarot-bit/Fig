@@ -1,0 +1,107 @@
+{
+ "source": "Musopen, The Complete Chopin Collection",
+ "license": "CC0 1.0 Universal, public domain dedication",
+ "url": "https://archive.org/details/musopen-chopin",
+ "tracks": [
+  {
+   "file": "nocturne-in-e-flat-op-9-no-2.m4a",
+   "title": "Nocturne in E flat, Op. 9 No. 2",
+   "seconds": 276.7
+  },
+  {
+   "file": "nocturne-in-b-flat-minor-op-9-no-1.m4a",
+   "title": "Nocturne in B flat minor, Op. 9 No. 1",
+   "seconds": 337.1
+  },
+  {
+   "file": "nocturne-in-b-op-9-no-3.m4a",
+   "title": "Nocturne in B, Op. 9 No. 3",
+   "seconds": 417.5
+  },
+  {
+   "file": "nocturne-in-f-op-15-no-1.m4a",
+   "title": "Nocturne in F, Op. 15 No. 1",
+   "seconds": 305.6
+  },
+  {
+   "file": "nocturne-in-c-sharp-minor-op-27-no-1.m4a",
+   "title": "Nocturne in C sharp minor, Op. 27 No. 1",
+   "seconds": 352.0
+  },
+  {
+   "file": "nocturne-in-d-flat-op-27-no-2.m4a",
+   "title": "Nocturne in D flat, Op. 27 No. 2",
+   "seconds": 377.8
+  },
+  {
+   "file": "nocturne-in-b-op-32-no-1.m4a",
+   "title": "Nocturne in B, Op. 32 No. 1",
+   "seconds": 301.1
+  },
+  {
+   "file": "nocturne-in-a-flat-op-32-no-2.m4a",
+   "title": "Nocturne in A flat, Op. 32 No. 2",
+   "seconds": 343.2
+  },
+  {
+   "file": "nocturne-in-c-minor-op-48-no-1.m4a",
+   "title": "Nocturne in C minor, Op. 48 No. 1",
+   "seconds": 379.3
+  },
+  {
+   "file": "nocturne-in-f-minor-op-55-no-1.m4a",
+   "title": "Nocturne in F minor, Op. 55 No. 1",
+   "seconds": 316.7
+  },
+  {
+   "file": "nocturne-in-e-flat-op-55-no-2.m4a",
+   "title": "Nocturne in E flat, Op. 55 No. 2",
+   "seconds": 310.0
+  },
+  {
+   "file": "nocturne-in-e-op-62-no-2.m4a",
+   "title": "Nocturne in E, Op. 62 No. 2",
+   "seconds": 339.6
+  },
+  {
+   "file": "nocturne-in-e-minor-op-72-no-1.m4a",
+   "title": "Nocturne in E minor, Op. 72 No. 1",
+   "seconds": 272.7
+  },
+  {
+   "file": "nocturne-in-c-minor-b-108.m4a",
+   "title": "Nocturne in C minor, B. 108",
+   "seconds": 193.1
+  },
+  {
+   "file": "nocturne-in-c-sharp-minor-b-49.m4a",
+   "title": "Nocturne in C sharp minor, B. 49",
+   "seconds": 239.0
+  },
+  {
+   "file": "prelude-in-a-op-28-no-7.m4a",
+   "title": "Prelude in A, Op. 28 No. 7",
+   "seconds": 155.3
+  },
+  {
+   "file": "prelude-in-f-sharp-op-28-no-13.m4a",
+   "title": "Prelude in F sharp, Op. 28 No. 13",
+   "seconds": 166.8
+  },
+  {
+   "file": "prelude-in-d-flat-op-28-no-15.m4a",
+   "title": "Prelude in D flat, Op. 28 No. 15",
+   "seconds": 295.3
+  },
+  {
+   "file": "prelude-in-a-flat-op-28-no-17.m4a",
+   "title": "Prelude in A flat, Op. 28 No. 17",
+   "seconds": 179.8
+  },
+  {
+   "file": "prelude-in-e-flat-op-28-no-19.m4a",
+   "title": "Prelude in E flat, Op. 28 No. 19",
+   "seconds": 256.7
+  }
+ ]
+}
