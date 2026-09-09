@@ -25,7 +25,11 @@
     "verseEnd": 7,
     "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:",
     "quote": "Knocking is not doubt. It is the sound of someone who expects a door.",
-    "gloss": "Three verbs and three answers, and none of the answers are conditional. The asking is the only variable in the sentence."
+    "gloss": "Three verbs and three answers, and none of the answers are conditional. The asking is the only variable in the sentence.",
+    "story": {
+     "badge": "Parable",
+     "body": "She sent the same application to the same company four times over two years. Friends told her it was starting to look desperate. She could not explain that from the inside it did not feel desperate, it felt like arriving early. The fourth time, a new manager read it and asked why she had not applied sooner. She had. Nobody had opened the door yet."
+    }
    },
    {
     "ref": "Hebrews 11:6",
@@ -35,7 +39,11 @@
     "verseEnd": 6,
     "text": "But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.",
     "quote": "You cannot come to Him hedging.",
-    "gloss": "He is called a rewarder in the same breath as the requirement. Believing that He is, and believing that He pays, are one act."
+    "gloss": "He is called a rewarder in the same breath as the requirement. Believing that He is, and believing that He pays, are one act.",
+    "story": {
+     "badge": "Parable",
+     "body": "He prayed for the business and kept a second plan running quietly underneath it, the way you keep a hand on a door. Both plans got half of him and neither one moved. The month he shut the second plan down was not the month he felt brave. It was the month he got tired of paying for two lives. Things started moving in the one he actually chose."
+    }
    },
    {
     "ref": "Matthew 9:29",
@@ -59,7 +67,11 @@
     "verseEnd": 23,
     "text": "Jesus said unto him, If thou canst believe, all things are possible to him that believeth.",
     "quote": "The limit was never on His side.",
-    "gloss": "The man asked if He could. He handed the question back. Possible to him that believeth, which puts the word if somewhere else entirely."
+    "gloss": "The man asked if He could. He handed the question back. Possible to him that believeth, which puts the word if somewhere else entirely.",
+    "story": {
+     "badge": "Parable",
+     "body": "Every quote she asked for came back too expensive, and she had started saying so before anyone answered. Somebody pointed out that she was making the calls already braced. She tried one week of asking plainly, without the flinch in her voice, and got two prices she could work with. Those prices had probably always been there. She had been asking in a way that assumed the answer."
+    }
    },
    {
     "ref": "Hebrews 11:1",
@@ -69,7 +81,11 @@
     "verseEnd": 1,
     "text": "Now faith is the substance of things hoped for, the evidence of things not seen.",
     "quote": "Faith is not the wanting. It is the having, before the proof.",
-    "gloss": "Substance and evidence are both courtroom words. Faith is being entered as the exhibit, not the argument."
+    "gloss": "Substance and evidence are both courtroom words. Faith is being entered as the exhibit, not the argument.",
+    "story": {
+     "badge": "Parable",
+     "body": "He bought the frame before the photograph existed. It sat empty on the shelf for most of a year and people asked about it and he said it was for something coming, which embarrassed him a little every time. When the picture finally came back from the printer it fit, because he had measured for it. The frame was not decoration. It was the first thing built."
+    }
    },
    {
     "ref": "Romans 4:17",
@@ -79,7 +95,11 @@
     "verseEnd": 17,
     "text": "(As it is written, I have made thee a father of many nations,) before him whom he believed, even God, who quickeneth the dead, and calleth those things which be not as though they were.",
     "quote": "Speak about it the way He does. As a thing that already is.",
-    "gloss": "He calls things that be not as though they were, and that is not described as poetry. It is described as how the thing gets made."
+    "gloss": "He calls things that be not as though they were, and that is not described as poetry. It is described as how the thing gets made.",
+    "story": {
+     "badge": "Parable",
+     "body": "She stopped saying she was trying to get out of debt and started saying she was paying off the last of it, which was not true yet by about nine thousand dollars. Her sister called it lying. She kept doing it because the old sentence made her tired and the new one made her check the account, and she checked it often. The number came down faster that year than in the three before it."
+    }
    },
    {
     "ref": "Isaiah 65:24",
@@ -89,7 +109,11 @@
     "verseEnd": 24,
     "text": "And it shall come to pass, that before they call, I will answer; and while they are yet speaking, I will hear.",
     "quote": "The answer left before your question did.",
-    "gloss": "Before they call, I will answer. The delay you are feeling is on the receiving end, not the sending end."
+    "gloss": "Before they call, I will answer. The delay you are feeling is on the receiving end, not the sending end.",
+    "story": {
+     "badge": "Parable",
+     "body": "The offer was dated the Tuesday. She had prayed about it on the Thursday, two days after it was already written and sitting in somebody's drafts, and she only found that out because the recruiter mentioned the date in passing. It changed how she waited for things. She stopped picturing a request going out and started picturing something already in transit."
+    }
    },
    {
     "ref": "John 16:24",
@@ -99,7 +123,11 @@
     "verseEnd": 24,
     "text": "Hitherto have ye asked nothing in my name: ask, and ye shall receive, that your joy may be full.",
     "quote": "Some things are unasked, not denied.",
-    "gloss": "Hitherto have ye asked nothing. He is not scolding them. He is pointing at an account nobody has drawn on."
+    "gloss": "Hitherto have ye asked nothing. He is not scolding them. He is pointing at an account nobody has drawn on.",
+    "story": {
+     "badge": "Parable",
+     "body": "He complained for six years about the shifts he was given and never once asked for different ones. He had a whole case built about why it would not work. The day somebody made him say it out loud to the manager it took about forty seconds, and the manager said that was fine. He was angry for a week afterwards, at himself, about six years."
+    }
    },
    {
     "ref": "Matthew 17:20",
@@ -109,7 +137,11 @@
     "verseEnd": 20,
     "text": "And Jesus said unto them, Because of your unbelief: for verily I say unto you, If ye have faith as a grain of mustard seed, ye shall say unto this mountain, Remove hence to yonder place; and it shall remove; and nothing shall be impossible unto you.",
     "quote": "It does not take much. It takes real.",
-    "gloss": "A mustard seed is the smallest thing in the illustration. The size was never the problem, and He says so before the mountain moves."
+    "gloss": "A mustard seed is the smallest thing in the illustration. The size was never the problem, and He says so before the mountain moves.",
+    "story": {
+     "badge": "Parable",
+     "body": "She could not manage to believe the whole thing. She could believe one small piece of it, that she would make one phone call on Monday, and she believed that completely. She made the call. Then there was a slightly larger piece she could believe on Tuesday. Nobody ever handed her the whole belief at once. It arrived in the size she could actually hold."
+    }
    },
    {
     "ref": "1 John 5:15",
@@ -119,7 +151,11 @@
     "verseEnd": 15,
     "text": "And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.",
     "quote": "Knowing He heard is the same as having it.",
-    "gloss": "The verse does not say we will have. It says we have, and it puts that in the same sentence as knowing He hears."
+    "gloss": "The verse does not say we will have. It says we have, and it puts that in the same sentence as knowing He hears.",
+    "story": {
+     "badge": "Parable",
+     "body": "After he asked, he used to keep asking, in case the first time had not gone through. Someone asked whether he would repeat an order to a waiter four times. He said no, that would be strange, you would just assume it was heard. He tried assuming it was heard. The waiting felt completely different, and it was the same waiting."
+    }
    },
    {
     "ref": "Matthew 21:22",
@@ -129,7 +165,11 @@
     "verseEnd": 22,
     "text": "And all things, whatsoever ye shall ask in prayer, believing, ye shall receive.",
     "quote": "The believing is the receiving. Nothing comes after it.",
-    "gloss": "All things, whatsoever, believing, ye shall receive. Four words wide open and one condition, and the condition is not effort."
+    "gloss": "All things, whatsoever, believing, ye shall receive. Four words wide open and one condition, and the condition is not effort.",
+    "story": {
+     "badge": "Parable",
+     "body": "She noticed she prayed in two different voices. One was for small things and it was casual and certain, and those things tended to happen. The other was for the thing she actually wanted, and it was careful and pleading and it never once sounded like she expected an answer. She started using the small voice for the big thing. It felt disrespectful for about a month."
+    }
    },
    {
     "ref": "Ephesians 3:20",
@@ -139,7 +179,11 @@
     "verseEnd": 20,
     "text": "Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us,",
     "quote": "You are not asking too much. You are asking too small.",
-    "gloss": "Exceeding abundantly above all that we ask or think. The ceiling named in the verse is your own imagination, and He is described as clearing it."
+    "gloss": "Exceeding abundantly above all that we ask or think. The ceiling named in the verse is your own imagination, and He is described as clearing it.",
+    "story": {
+     "badge": "Parable",
+     "body": "He asked for enough to cover the month, because that felt like a reasonable thing to ask a busy God for. The month got covered, several times, always exactly. It took him years to notice that he had never once asked for the year. When he finally did, it was not harder to ask. It was the same sentence with a different number in it."
+    }
    },
    {
     "ref": "Psalms 37:4",
@@ -149,7 +193,11 @@
     "verseEnd": 4,
     "text": "Delight thyself also in the LORD; and he shall give thee the desires of thine heart.",
     "quote": "Delight first. The desires are the second half of the verse for a reason.",
-    "gloss": "The order is not decoration. Delight is the condition and the giving is what follows from it, in that sequence."
+    "gloss": "The order is not decoration. Delight is the condition and the giving is what follows from it, in that sequence.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had a list of what she wanted and she worked the list like a job, and it made her miserable and none of it came. Someone told her to put the list in a drawer for a month and just enjoy Him, and she thought that was a dodge. By the end of the month two things on the list had stopped mattering and one had arrived, and she could not say which was the bigger change."
+    }
    },
    {
     "ref": "Matthew 8:13",
@@ -173,7 +221,11 @@
     "verseEnd": 27,
     "text": "And Jesus looking upon them saith, With men it is impossible, but not with God: for with God all things are possible.",
     "quote": "Impossible is a measurement of you, not of it.",
-    "gloss": "He does not argue that the thing is easy. He moves the whole question off the man and onto God, and the word impossible stays where it was."
+    "gloss": "He does not argue that the thing is easy. He moves the whole question off the man and onto God, and the word impossible stays where it was.",
+    "story": {
+     "badge": "Parable",
+     "body": "The number he needed was larger than anything he had earned in a year, and he kept doing the arithmetic to prove it could not be done. The arithmetic was correct every time. What he was actually proving, over and over, was that he could not do it, which nobody had disputed. The month he stopped running the numbers was the month somebody offered to run them with him."
+    }
    },
    {
     "ref": "Luke 11:10",
@@ -183,7 +235,11 @@
     "verseEnd": 10,
     "text": "For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.",
     "quote": "Every one. That is the size of the door.",
-    "gloss": "Every one that asketh receiveth. No qualifier follows it, and He repeats the pattern three times so nobody reads it as a special case."
+    "gloss": "Every one that asketh receiveth. No qualifier follows it, and He repeats the pattern three times so nobody reads it as a special case.",
+    "story": {
+     "badge": "Parable",
+     "body": "She assumed there was a category of person these promises were written for and that she was outside it, and she never said that out loud because it sounded ridiculous. A woman at church asked her one day why she never asked for anything for herself. She did not have an answer. She had spent eleven years being the exception to a verse that does not list any."
+    }
    },
    {
     "ref": "John 15:7",
@@ -193,7 +249,11 @@
     "verseEnd": 7,
     "text": "If ye abide in me, and my words abide in you, ye shall ask what ye will, and it shall be done unto you.",
     "quote": "Abiding is the condition. After that the asking is left wide open.",
-    "gloss": "Ask what ye will. The blank is deliberately blank, and the only thing filled in ahead of it is where you have been living."
+    "gloss": "Ask what ye will. The blank is deliberately blank, and the only thing filled in ahead of it is where you have been living.",
+    "story": {
+     "badge": "Parable",
+     "body": "He treated prayer like a service counter, somewhere he went, got seen, and left, and the asking never worked very well. The year he started staying, reading in the mornings with nothing to request, he noticed his requests had changed shape without him editing them. He was asking for different things by then, and getting most of them."
+    }
    },
    {
     "ref": "Luke 1:37",
@@ -203,7 +263,11 @@
     "verseEnd": 37,
     "text": "For with God nothing shall be impossible.",
     "quote": "Nothing. It is a short verse because it does not need qualifying.",
-    "gloss": "Six words with no exception clause, and they are spoken to a woman who has just been told something biologically absurd."
+    "gloss": "Six words with no exception clause, and they are spoken to a woman who has just been told something biologically absurd.",
+    "story": {
+     "badge": "Parable",
+     "body": "She kept a private list of things she had decided were too late. Her age was on it, and a language she had wanted to learn, and one relationship. She never prayed about anything on that list because it felt unfair to ask. Somebody pointed out that she had built a category God had never agreed to. She started with the language because it was the smallest, and it was not too late."
+    }
    },
    {
     "ref": "James 1:6",
@@ -213,7 +277,11 @@
     "verseEnd": 6,
     "text": "But let him ask in faith, nothing wavering. For he that wavereth is like a wave of the sea driven with the wind and tossed.",
     "quote": "A wave does not get anywhere, and it moves all day.",
-    "gloss": "Driven with the wind and tossed. The picture is not of stillness failing. It is of constant motion that never arrives, which is what doubt actually looks like."
+    "gloss": "Driven with the wind and tossed. The picture is not of stillness failing. It is of constant motion that never arrives, which is what doubt actually looks like.",
+    "story": {
+     "badge": "Parable",
+     "body": "He asked on the Monday and took it back on the Wednesday and asked again on the Friday with an apology attached. He was busy the whole week. At the end of it he was exactly where he started, and tired, and he could not point to one thing he had done twice in the same direction. The problem was never effort. He had plenty of effort."
+    }
    },
    {
     "ref": "Mark 5:34",
@@ -223,7 +291,11 @@
     "verseEnd": 34,
     "text": "And he said unto her, Daughter, thy faith hath made thee whole; go in peace, and be whole of thy plague.",
     "quote": "He credited her, not Himself. Notice that.",
-    "gloss": "Thy faith hath made thee whole. He had the power and still named hers as the thing that did it, and He said it in front of a crowd."
+    "gloss": "Thy faith hath made thee whole. He had the power and still named hers as the thing that did it, and He said it in front of a crowd.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had spent twelve years being told what was wrong with her by people who were paid to know. When it finally turned, the one man with the power to fix it told her it was her own doing. Nobody had handed her credit for anything in the whole twelve years. She said afterwards that the sentence did more for her than the healing."
+    }
    },
    {
     "ref": "Matthew 6:8",
@@ -261,7 +333,11 @@
     "verseEnd": 16,
     "text": "Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.",
     "quote": "Boldly. That one word is doing all the work.",
-    "gloss": "Come boldly unto the throne of grace. The posture named is confidence rather than apology, and it is written as an instruction."
+    "gloss": "Come boldly unto the throne of grace. The posture named is confidence rather than apology, and it is written as an instruction.",
+    "story": {
+     "badge": "Parable",
+     "body": "He prayed the way he wrote emails to people he owed money. Long preamble, several apologies, the request buried near the end. Someone read one of those emails and said you sound like you are already expecting a no. He said that was just being polite. She said it is not politeness if the other person has already told you to come in."
+    }
    },
    {
     "ref": "Psalms 34:10",
@@ -271,7 +347,11 @@
     "verseEnd": 10,
     "text": "The young lions do lack, and suffer hunger: but they that seek the LORD shall not want any good thing.",
     "quote": "Shall not want any good thing. Read that again, slowly.",
-    "gloss": "The young lions do lack and suffer hunger, and the verse sets them directly against those who seek Him. The comparison is deliberate."
+    "gloss": "The young lions do lack and suffer hunger, and the verse sets them directly against those who seek Him. The comparison is deliberate.",
+    "story": {
+     "badge": "Parable",
+     "body": "She kept an internal ranking of which needs were allowed. Rent counted. A coat that actually fit did not. She would have said God cared about her, and she would not have said He cared whether her coat fit, and she never noticed that those two sentences cannot both be true. The coat is a small story. It was not a small change."
+    }
    },
    {
     "ref": "Mark 10:52",
@@ -281,7 +361,11 @@
     "verseEnd": 52,
     "text": "And Jesus said unto him, Go thy way; thy faith hath made thee whole. And immediately he received his sight, and followed Jesus in the way.",
     "quote": "He was told to be quiet, and he got louder.",
-    "gloss": "The crowd rebuked Bartimaeus and he cried out the more a great deal. The persistence sits in the verses just before the healing."
+    "gloss": "The crowd rebuked Bartimaeus and he cried out the more a great deal. The persistence sits in the verses just before the healing.",
+    "story": {
+     "badge": "Parable",
+     "body": "Everyone around him had a reason he should keep it down, and some of them were being kind about it. He understood that they were embarrassed, and he shouted anyway, because he had worked out that this was the one afternoon it was possible and their comfort was not worth the afternoon. They were still talking when he was already being called over."
+    }
    },
    {
     "ref": "1 John 3:22",
@@ -291,7 +375,11 @@
     "verseEnd": 22,
     "text": "And whatsoever we ask, we receive of him, because we keep his commandments, and do those things that are pleasing in his sight.",
     "quote": "Whatsoever. He keeps returning to that word.",
-    "gloss": "And whatsoever we ask, we receive of him. John writes it as a settled habit rather than an occasional event."
+    "gloss": "And whatsoever we ask, we receive of him. John writes it as a settled habit rather than an occasional event.",
+    "story": {
+     "badge": "Parable",
+     "body": "He read the verse and immediately went looking for the exception, because a promise that size felt like it had to have one. He found the second half, about keeping the commandments, and decided that was the catch. Years later he noticed it was not a catch at all. It described the kind of person who would be asking in the first place. He had been reading a description as a barrier."
+    }
    },
    {
     "ref": "John 14:13",
@@ -301,7 +389,11 @@
     "verseEnd": 13,
     "text": "And whatsoever ye shall ask in my name, that will I do, that the Father may be glorified in the Son.",
     "quote": "In my name means in His nature, not as a password.",
-    "gloss": "That will I do, that the Father may be glorified. The purpose clause tells you what kind of asking fits inside the name."
+    "gloss": "That will I do, that the Father may be glorified. The purpose clause tells you what kind of asking fits inside the name.",
+    "story": {
+     "badge": "Parable",
+     "body": "She used to add the phrase at the end like a stamp on an envelope, and wondered why so little arrived. Someone explained that signing another person's name means you are acting for them, in the way they would act. She started asking herself what He would actually want out of what she was asking for. Some requests did not survive the question. The ones that did came in differently."
+    }
    },
    {
     "ref": "James 4:3",
@@ -311,7 +403,11 @@
     "verseEnd": 3,
     "text": "Ye ask, and receive not, because ye ask amiss, that ye may consume it upon your lusts.",
     "quote": "Sometimes the no is about the wanting, not the asking.",
-    "gloss": "Ye ask amiss. The verse names a way of asking that fails, which quietly means there is a way that does not."
+    "gloss": "Ye ask amiss. The verse names a way of asking that fails, which quietly means there is a way that does not.",
+    "story": {
+     "badge": "Parable",
+     "body": "He wanted the promotion so he would stop feeling small next to his brother, and he was honest enough with himself to know it. He asked for two years. It came in the third, after the reason had quietly changed into something about the work itself, and he has wondered ever since whether those two facts are related."
+    }
    },
    {
     "ref": "Luke 18:42",
@@ -321,7 +417,11 @@
     "verseEnd": 42,
     "text": "And Jesus said unto him, Receive thy sight: thy faith hath saved thee.",
     "quote": "Receive. It is an instruction, not a parcel being handed over.",
-    "gloss": "Receive thy sight is phrased as a command to the man, which puts an action back on his side of the exchange."
+    "gloss": "Receive thy sight is phrased as a command to the man, which puts an action back on his side of the exchange.",
+    "story": {
+     "badge": "Parable",
+     "body": "The word he was given was not here, or granted, or done. It was receive, which is a thing you do with your hands. He thought about that for a long time afterwards, about how many things he had asked for and then stood still in front of, waiting for somebody to set them down beside him."
+    }
    }
   ],
   "gratitude": [
@@ -347,7 +447,11 @@
     "verseEnd": 18,
     "text": "In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
     "quote": "In every thing. That is the whole instruction, and it is the hard part.",
-    "gloss": "Not for every thing. In it. The circumstance is where you are standing, not what you are thanking Him for."
+    "gloss": "Not for every thing. In it. The circumstance is where you are standing, not what you are thanking Him for.",
+    "story": {
+     "badge": "Parable",
+     "body": "The week her father was in hospital she could not thank God for the hospital, and nobody was asking her to. She thanked Him for the nurse who remembered his name, and for the parking space, and for the fact that her brother came. She said later it was not a trick to feel better. It was the only way she found to stay in the room."
+    }
    },
    {
     "ref": "Psalms 100:4",
@@ -357,7 +461,11 @@
     "verseEnd": 4,
     "text": "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name.",
     "quote": "You do not thank Him once you are inside. The thanks is the gate.",
-    "gloss": "Enter into his gates with thanksgiving. It is written as the means of entry, not as the manners you use after arriving."
+    "gloss": "Enter into his gates with thanksgiving. It is written as the means of entry, not as the manners you use after arriving.",
+    "story": {
+     "badge": "Parable",
+     "body": "He used to spend the first ten minutes of prayer explaining the situation, and by the end of those ten minutes he felt worse than when he sat down. Someone suggested he open with what had already gone right that week, even if the list was short. The list was usually short. It changed the room he was praying in."
+    }
    },
    {
     "ref": "Psalms 106:1",
@@ -367,7 +475,11 @@
     "verseEnd": 1,
     "text": "Praise ye the LORD. O give thanks unto the LORD; for he is good: for his mercy endureth for ever.",
     "quote": "His mercy is not a mood. It endures.",
-    "gloss": "Endureth for ever is a claim about duration, which means the thing you are afraid you used up cannot be used up."
+    "gloss": "Endureth for ever is a claim about duration, which means the thing you are afraid you used up cannot be used up.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had a number in her head for how many times she could come back before it ran out. She never said the number out loud because she knew how it sounded. It was somewhere around four. She has been back a great deal more than four times now and has stopped counting, which she thinks is closer to the point than the counting ever was."
+    }
    },
    {
     "ref": "Philippians 4:6",
@@ -377,7 +489,11 @@
     "verseEnd": 6,
     "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
     "quote": "Ask with thanks attached, or you are only worrying out loud.",
-    "gloss": "With thanksgiving let your requests be made known. The thanks is bolted to the request in the same clause, not offered afterward."
+    "gloss": "With thanksgiving let your requests be made known. The thanks is bolted to the request in the same clause, not offered afterward.",
+    "story": {
+     "badge": "Parable",
+     "body": "He noticed his prayers and his worrying used exactly the same words in exactly the same order. The only difference was who he was facing while he did it. Putting one line of thanks at the front changed the whole thing, not because it was magic but because it turned out to be impossible to say and stay in the same posture."
+    }
    },
    {
     "ref": "Psalms 103:2",
@@ -387,7 +503,11 @@
     "verseEnd": 2,
     "text": "Bless the LORD, O my soul, and forget not all his benefits:",
     "quote": "Forgetting is the only way to be poor.",
-    "gloss": "Forget not all his benefits. The instruction assumes the benefits are already there and that losing track of them is the actual risk."
+    "gloss": "Forget not all his benefits. The instruction assumes the benefits are already there and that losing track of them is the actual risk.",
+    "story": {
+     "badge": "Parable",
+     "body": "She started writing down what came in. Not money, just anything. It was a page a week and most of it was small. Two years later she read the first pages back and did not recognise the woman who wrote them as somebody in trouble, though at the time she was certain she was. None of it had felt like a benefit on the day."
+    }
    },
    {
     "ref": "Psalms 34:1",
@@ -411,7 +531,11 @@
     "verseEnd": 24,
     "text": "This is the day which the LORD hath made; we will rejoice and be glad in it.",
     "quote": "It was made. Not endured. Made.",
-    "gloss": "This is the day which the LORD hath made. Somebody built it on purpose, which makes rejoicing a reasonable response rather than a forced one."
+    "gloss": "This is the day which the LORD hath made. Somebody built it on purpose, which makes rejoicing a reasonable response rather than a forced one.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had been treating Tuesdays as something to survive until the weekend, which meant about five sevenths of his life was a corridor. Someone pointed out that the verse does not say some days. He tried saying it on a Tuesday morning, out loud, in the car, feeling ridiculous, and kept doing it. The Tuesdays did not change. He stopped walking through them."
+    }
    },
    {
     "ref": "Ephesians 5:20",
@@ -421,7 +545,11 @@
     "verseEnd": 20,
     "text": "Giving thanks always for all things unto God and the Father in the name of our Lord Jesus Christ;",
     "quote": "Always, and for all things, is not a suggestion about tone.",
-    "gloss": "Giving thanks always for all things. Paul writes it as the ordinary condition of a person, not as a reaction to good news."
+    "gloss": "Giving thanks always for all things. Paul writes it as the ordinary condition of a person, not as a reaction to good news.",
+    "story": {
+     "badge": "Parable",
+     "body": "She could thank Him for good news easily. The test was an ordinary Wednesday with nothing in it, no occasion and no crisis either. That was the day she found out whether thankfulness was a reaction she had or a thing she did. It turned out to be a thing she did, once she practised it."
+    }
    },
    {
     "ref": "Psalms 50:23",
@@ -431,7 +559,11 @@
     "verseEnd": 23,
     "text": "Whoso offereth praise glorifieth me: and to him that ordereth his conversation aright will I shew the salvation of God.",
     "quote": "Praise is not the response to the door opening. It is the hinge.",
-    "gloss": "Whoso offereth praise glorifieth me, and the second half of the verse ties it directly to being shown the way out."
+    "gloss": "Whoso offereth praise glorifieth me, and the second half of the verse ties it directly to being shown the way out.",
+    "story": {
+     "badge": "Parable",
+     "body": "He kept waiting for something to resolve so he would have a reason, and the reason never arrived on schedule. Somewhere in the second year he started praising without one. He would not claim that caused what happened next, only that he was a different man by the time it happened, and that the difference is what let him walk through it."
+    }
    },
    {
     "ref": "Colossians 3:15",
@@ -441,7 +573,11 @@
     "verseEnd": 15,
     "text": "And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful.",
     "quote": "Be ye thankful is written as a command, which means it is a choice.",
-    "gloss": "It sits right after letting peace rule. The order matters. Thankfulness is what keeps the peace in charge."
+    "gloss": "It sits right after letting peace rule. The order matters. Thankfulness is what keeps the peace in charge.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had always understood gratitude as a weather event, something that arrived if conditions were right. Being told to do it was strange, like being told to be tall. Then she tried it the way you try any instruction, badly and on purpose, and found it behaved much more like a muscle than like weather."
+    }
    },
    {
     "ref": "Psalms 107:1",
@@ -451,7 +587,11 @@
     "verseEnd": 1,
     "text": "O give thanks unto the LORD, for he is good: for his mercy endureth for ever.",
     "quote": "Say it because it is true, not because you feel it yet.",
-    "gloss": "O give thanks unto the LORD, for he is good. The reason given is His character, not your week."
+    "gloss": "O give thanks unto the LORD, for he is good. The reason given is His character, not your week.",
+    "story": {
+     "badge": "Parable",
+     "body": "He said the sentence for eleven days without meaning it, which felt dishonest, and he nearly stopped. On about the twelfth day he heard himself say it and noticed he was no longer performing. Nobody could tell him when it turned over. He is fairly sure the eleven dishonest days were not wasted."
+    }
    },
    {
     "ref": "Psalms 103:1",
@@ -461,7 +601,11 @@
     "verseEnd": 1,
     "text": "A Psalm of David. Bless the LORD, O my soul: and all that is within me, bless his holy name.",
     "quote": "He is talking to himself. That is allowed.",
-    "gloss": "Bless the LORD, O my soul. David gives his own insides an instruction, which means thanks is something you can order rather than something you wait to feel."
+    "gloss": "Bless the LORD, O my soul. David gives his own insides an instruction, which means thanks is something you can order rather than something you wait to feel.",
+    "story": {
+     "badge": "Parable",
+     "body": "She talked to herself all day, mostly critically, and had never once thought of that running commentary as something she was allowed to direct. The psalm gave her permission to hand herself an instruction instead of a review. It felt strange in her mouth for weeks. It is the only habit from that year she still keeps."
+    }
    },
    {
     "ref": "Hebrews 13:15",
@@ -485,7 +629,11 @@
     "verseEnd": 18,
     "text": "Yet I will rejoice in the LORD, I will joy in the God of my salvation.",
     "quote": "Yet. The whole verse turns on one small word.",
-    "gloss": "Read what sits directly before it. No fruit on the vine, no herd in the stall, nothing in the field. Then yet I will rejoice."
+    "gloss": "Read what sits directly before it. No fruit on the vine, no herd in the stall, nothing in the field. Then yet I will rejoice.",
+    "story": {
+     "badge": "Parable",
+     "body": "He wrote out everything that had not worked that year, honestly, without softening any of it, and it filled most of a page. Then he wrote the word yet at the bottom and sat there. He said afterwards that the one word was harder to write than the whole page above it, and that it was the only sentence he finished."
+    }
    },
    {
     "ref": "1 Corinthians 15:57",
@@ -495,7 +643,11 @@
     "verseEnd": 57,
     "text": "But thanks be to God, which giveth us the victory through our Lord Jesus Christ.",
     "quote": "He wrote the victory in the present tense. Use the tense He used.",
-    "gloss": "Giveth us the victory. Not will give. Paul reports it as ongoing supply rather than a date on a calendar."
+    "gloss": "Giveth us the victory. Not will give. Paul reports it as ongoing supply rather than a date on a calendar.",
+    "story": {
+     "badge": "Parable",
+     "body": "She kept thanking Him for what He was going to do, which sounds close enough but always left her standing outside of it. Somebody showed her the tense in the verse. She changed one word in how she prayed, from will give to gives, and said it was the difference between waiting at a door and being handed a key."
+    }
    },
    {
     "ref": "Psalms 92:1",
@@ -505,7 +657,11 @@
     "verseEnd": 1,
     "text": "A Psalm or Song for the sabbath day. It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High:",
     "quote": "It is good for you before it is anything else.",
-    "gloss": "It is a good thing to give thanks. Named as beneficial, not as owed, which puts thanks closer to food than to manners."
+    "gloss": "It is a good thing to give thanks. Named as beneficial, not as owed, which puts thanks closer to food than to manners.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had always framed thanks as something owed, a bill you settle so the account stays clear, which made it a chore he did grudgingly for years. The word good in the verse undid that. He started treating it the way he treats water and sleep, as a thing taken because a person needs it, not paid because a person owes it."
+    }
    },
    {
     "ref": "Psalms 118:1",
@@ -515,7 +671,11 @@
     "verseEnd": 1,
     "text": "O give thanks unto the LORD; for he is good: because his mercy endureth for ever.",
     "quote": "The reason given is His character, not your week.",
-    "gloss": "For he is good. The verse hands you the grounds up front, so you are not required to find them somewhere in your circumstances."
+    "gloss": "For he is good. The verse hands you the grounds up front, so you are not required to find them somewhere in your circumstances.",
+    "story": {
+     "badge": "Parable",
+     "body": "Her week was genuinely bad and she did not want to lie about it. Somebody showed her that the verse does not ask her to. The grounds are stated inside the verse and they are about Him. She could hold both, an honest account of the week and a true sentence about God, without either one cancelling the other."
+    }
    },
    {
     "ref": "Colossians 1:12",
@@ -525,7 +685,11 @@
     "verseEnd": 12,
     "text": "Giving thanks unto the Father, which hath made us meet to be partakers of the inheritance of the saints in light:",
     "quote": "You were made fit for it. That already happened.",
-    "gloss": "Hath made us meet to be partakers. Past tense, and done to you, which means qualifying for the inheritance is not this year's project."
+    "gloss": "Hath made us meet to be partakers. Past tense, and done to you, which means qualifying for the inheritance is not this year's project.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had a running sense of being not quite qualified, in his family, at work, at church, and he had assumed the qualifying was work still ahead of him. The tense in the verse is past, and it is done to you. He read it four or five times to be sure. He calls the year after that the first year he stopped auditioning."
+    }
    },
    {
     "ref": "Jonah 2:9",
@@ -549,7 +713,11 @@
     "verseEnd": 12,
     "text": "To the end that my glory may sing praise to thee, and not be silent. O LORD my God, I will give thanks unto thee for ever.",
     "quote": "Silence is the thing being ruled out.",
-    "gloss": "And not be silent. The verse treats saying nothing as the failure state rather than as neutral ground."
+    "gloss": "And not be silent. The verse treats saying nothing as the failure state rather than as neutral ground.",
+    "story": {
+     "badge": "Parable",
+     "body": "She was grateful, genuinely, and never said any of it out loud to anyone including God, and would have told you private gratitude counts the same. The verse treats silence as the failure. She started saying one thing out loud each night to an empty kitchen. Her husband asked after a fortnight what had changed about her."
+    }
    },
    {
     "ref": "Psalms 147:7",
@@ -559,7 +727,11 @@
     "verseEnd": 7,
     "text": "Sing unto the LORD with thanksgiving; sing praise upon the harp unto our God:",
     "quote": "Sung, not thought. Out loud is part of the instruction.",
-    "gloss": "Sing unto the LORD with thanksgiving. Every verb in the verse is audible, which makes gratitude an act rather than a mood."
+    "gloss": "Sing unto the LORD with thanksgiving. Every verb in the verse is audible, which makes gratitude an act rather than a mood.",
+    "story": {
+     "badge": "Parable",
+     "body": "He thought about being thankful a great deal, and it stayed a thought, which is to say it stayed in the same room as all his other thoughts and got outvoted daily. The first time he said it out loud in the car he was embarrassed by his own voice. It also did not get outvoted, which he had not expected."
+    }
    },
    {
     "ref": "1 Chronicles 16:8",
@@ -569,7 +741,11 @@
     "verseEnd": 8,
     "text": "Give thanks unto the LORD, call upon his name, make known his deeds among the people.",
     "quote": "Tell somebody. That is part of the instruction.",
-    "gloss": "Make known his deeds among the people. Gratitude here is not private. It ends with someone else hearing about it."
+    "gloss": "Make known his deeds among the people. Gratitude here is not private. It ends with someone else hearing about it.",
+    "story": {
+     "badge": "Parable",
+     "body": "She kept the good thing to herself for months because saying it felt like bragging, or like tempting something. Then a friend turned up in the same spot she had been in, and she told the story badly, in a kitchen, and watched the friend's face change. She understood then that she had been sitting on something that was not only hers."
+    }
    },
    {
     "ref": "Psalms 116:17",
@@ -579,7 +755,11 @@
     "verseEnd": 17,
     "text": "I will offer to thee the sacrifice of thanksgiving, and will call upon the name of the LORD.",
     "quote": "Thanks first, then the asking. In that order.",
-    "gloss": "The sacrifice of thanksgiving is in the first half of the verse and the calling on His name is in the second."
+    "gloss": "The sacrifice of thanksgiving is in the first half of the verse and the calling on His name is in the second.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had it the other way round for most of his life. Ask, and then thank if it came. The verse puts them in the opposite order, so he tried it, and found the asking that followed thanks was different in kind. It was shorter, for one thing. He wanted fewer things by the time he reached that part of the sentence."
+    }
    },
    {
     "ref": "Daniel 2:23",
@@ -603,7 +783,11 @@
     "verseEnd": 16,
     "text": "And fell down on his face at his feet, giving him thanks: and he was a Samaritan.",
     "quote": "Ten were healed. One came back.",
-    "gloss": "All ten were cleansed on the road. The one who turned around is the only one who hears thy faith hath made thee whole."
+    "gloss": "All ten were cleansed on the road. The one who turned around is the only one who hears thy faith hath made thee whole.",
+    "story": {
+     "badge": "Parable",
+     "body": "Nine of them did exactly what they had been told to do, and nothing in the account says they were ungrateful. They were busy, and free, and on their way to the priest like He said. Only one worked out that the errand could wait. That is the whole difference between them, and it got him a sentence none of the other nine ever heard."
+    }
    },
    {
     "ref": "Psalms 9:1",
@@ -613,7 +797,11 @@
     "verseEnd": 1,
     "text": "To the chief Musician upon Muthlabben, A Psalm of David. I will praise thee, O LORD, with my whole heart; I will shew forth all thy marvellous works.",
     "quote": "Whole heart. Not the part that is currently satisfied.",
-    "gloss": "I will praise thee with my whole heart. The measure named is the whole of him, which rules out praising with the convenient half."
+    "gloss": "I will praise thee with my whole heart. The measure named is the whole of him, which rules out praising with the convenient half.",
+    "story": {
+     "badge": "Parable",
+     "body": "She could praise Him with the part of her that had healthy kids and a roof. The part still angry about her mother sat out of it, every time, for years, and stayed a closed room. The verse asks for the whole thing. Bringing the angry part in did not resolve it. It did stop it being separate."
+    }
    },
    {
     "ref": "Psalms 63:3",
@@ -623,7 +811,11 @@
     "verseEnd": 3,
     "text": "Because thy lovingkindness is better than life, my lips shall praise thee.",
     "quote": "Better than life. He weighed the two and said so.",
-    "gloss": "Because thy lovingkindness is better than life. The praise in the second half follows from that valuation rather than from circumstances."
+    "gloss": "Because thy lovingkindness is better than life. The praise in the second half follows from that valuation rather than from circumstances.",
+    "story": {
+     "badge": "Parable",
+     "body": "David wrote that in a desert while men were trying to kill him, which is worth knowing before deciding it is a comfortable sentence. He was not comparing God to a good life. He was comparing God to being alive at all, in a week when that was genuinely in question, and he came down where he came down."
+    }
    },
    {
     "ref": "Psalms 95:2",
@@ -633,7 +825,11 @@
     "verseEnd": 2,
     "text": "Let us come before his presence with thanksgiving, and make a joyful noise unto him with psalms.",
     "quote": "It is how you arrive, not what you say once you are inside.",
-    "gloss": "Let us come before his presence with thanksgiving. Same idea as the gates in Psalm 100. Thanks is the approach itself."
+    "gloss": "Let us come before his presence with thanksgiving. Same idea as the gates in Psalm 100. Thanks is the approach itself.",
+    "story": {
+     "badge": "Parable",
+     "body": "He used to arrive at prayer the way you arrive at a complaints desk, with the grievance already in his hand. It was honest, and it went nowhere for a long time. Changing what he carried through the door did not make the grievance disappear. It meant he was a different man holding it by the time he set it down."
+    }
    },
    {
     "ref": "Colossians 3:17",
@@ -643,7 +839,11 @@
     "verseEnd": 17,
     "text": "And whatsoever ye do in word or deed, do all in the name of the Lord Jesus, giving thanks to God and the Father by him.",
     "quote": "Whatsoever ye do. It is meant to sit underneath everything.",
-    "gloss": "In word or deed, giving thanks. Paul does not carve out a category of ordinary tasks that are exempt from it."
+    "gloss": "In word or deed, giving thanks. Paul does not carve out a category of ordinary tasks that are exempt from it.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had a spiritual half of her life and an admin half, and she would have defended that split as realistic. The verse does not leave room for an admin half. She started saying thank you over the small things, the invoices and the school run, and the split closed up quietly over about a year without her deciding to close it."
+    }
    }
   ],
   "restoration": [
@@ -669,7 +869,11 @@
     "verseEnd": 25,
     "text": "I, even I, am he that blotteth out thy transgressions for mine own sake, and will not remember thy sins.",
     "quote": "He does not keep the copy that you keep.",
-    "gloss": "Blotteth out, and will not remember. If the record is being wiped on His side, holding your own copy is a decision you are making."
+    "gloss": "Blotteth out, and will not remember. If the record is being wiped on His side, holding your own copy is a decision you are making.",
+    "story": {
+     "badge": "Parable",
+     "body": "He could recite the thing he had done, word for word, fifteen years later, and had never once been asked to. He kept it like a receipt in case somebody needed proof he knew. Nobody ever asked. He was the only party to the whole matter still holding a copy, and he was holding it against himself on behalf of someone who had already thrown theirs away."
+    }
    },
    {
     "ref": "Psalms 23:3",
@@ -679,7 +883,11 @@
     "verseEnd": 3,
     "text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake.",
     "quote": "Restored, not replaced.",
-    "gloss": "He restoreth my soul. It is the same soul, brought back, which is a very different promise from being handed a new one."
+    "gloss": "He restoreth my soul. It is the same soul, brought back, which is a very different promise from being handed a new one.",
+    "story": {
+     "badge": "Parable",
+     "body": "She wanted to be a different woman, somebody with none of this in her history, and she prayed for exactly that for a long time. What came back was the same woman, with the same history, working again. She admits she was disappointed for about a year before she understood she had been asking to be deleted and had been given something better."
+    }
    },
    {
     "ref": "2 Corinthians 5:17",
@@ -689,7 +897,11 @@
     "verseEnd": 17,
     "text": "Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.",
     "quote": "Old things are passed away. Passed. Already.",
-    "gloss": "Every verb in the verse is finished. Become new is not something being scheduled, it is being reported."
+    "gloss": "Every verb in the verse is finished. Become new is not something being scheduled, it is being reported.",
+    "story": {
+     "badge": "Parable",
+     "body": "He kept introducing himself with the worst chapter first, to get ahead of it, so nobody could surprise him with it later. A man he respected asked him one day why he opened with something that was over. He did not have an answer. He had been keeping a thing alive by announcing it, and it had been finished for years."
+    }
    },
    {
     "ref": "Lamentations 3:23",
@@ -699,7 +911,11 @@
     "verseEnd": 23,
     "text": "They are new every morning: great is thy faithfulness.",
     "quote": "Mercy does not carry over. It arrives new.",
-    "gloss": "New every morning, written by a man in the middle of a ruined city. He is not describing good circumstances. He is describing supply."
+    "gloss": "New every morning, written by a man in the middle of a ruined city. He is not describing good circumstances. He is describing supply.",
+    "story": {
+     "badge": "Parable",
+     "body": "She used to wake already in debt to the day before, carrying yesterday's failure into a morning that had not done anything to her. Somebody told her the supply is described as new, which means yesterday's is not what she is drawing on. It took a while to believe the morning was actually clean. She stopped starting the day owing."
+    }
    },
    {
     "ref": "Isaiah 61:3",
@@ -709,7 +925,11 @@
     "verseEnd": 3,
     "text": "To appoint unto them that mourn in Zion, to give unto them beauty for ashes, the oil of joy for mourning, the garment of praise for the spirit of heaviness; that they might be called trees of righteousness, the planting of the LORD, that he might be glorified.",
     "quote": "Beauty for ashes is a trade, not a comfort.",
-    "gloss": "For is the word doing the work. Something is handed over and something comes back, which means the ashes had to be given up to make the exchange."
+    "gloss": "For is the word doing the work. Something is handed over and something comes back, which means the ashes had to be given up to make the exchange.",
+    "story": {
+     "badge": "Parable",
+     "body": "He wanted to keep the ashes and get the beauty as well, which he would never have said out loud but is what he was doing. The ashes were familiar and they explained him. It is a trade, and a trade means handing something over. The hard part was never the receiving. It was letting go of the thing that had become his explanation."
+    }
    },
    {
     "ref": "Revelation 21:5",
@@ -719,7 +939,11 @@
     "verseEnd": 5,
     "text": "And he that sat upon the throne said, Behold, I make all things new. And he said unto me, Write: for these words are true and faithful.",
     "quote": "All things. Not the salvageable ones.",
-    "gloss": "Behold, I make all things new. The line is spoken in the present tense about a work already under way."
+    "gloss": "Behold, I make all things new. The line is spoken in the present tense about a work already under way.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had a private sorting system, things that could still be saved and things that were past it, and she only ever prayed about the first pile. The second pile she considered realism. The verse does not have a second pile. She started with one item out of it, mostly to prove a point, and it is the item she now tells people about."
+    }
    },
    {
     "ref": "Romans 12:2",
@@ -743,7 +967,11 @@
     "verseEnd": 18,
     "text": "Come now, and let us reason together, saith the LORD: though your sins be as scarlet, they shall be as white as snow; though they be red like crimson, they shall be as wool.",
     "quote": "Scarlet is not a stain He is working around.",
-    "gloss": "As white as snow, and the invitation before it is come now, let us reason together. He opens the conversation Himself."
+    "gloss": "As white as snow, and the invitation before it is come now, let us reason together. He opens the conversation Himself.",
+    "story": {
+     "badge": "Parable",
+     "body": "He assumed there was a grading system and that he was in the lower band permanently, and that the best available outcome was being tolerated. The verse names the worst colour it can and then names the best one. No middle result is offered anywhere in the sentence. That took him longer to accept than the forgiveness did."
+    }
    },
    {
     "ref": "Psalms 103:12",
@@ -753,7 +981,11 @@
     "verseEnd": 12,
     "text": "As far as the east is from the west, so far hath he removed our transgressions from us.",
     "quote": "East and west never meet. That is the point of the measurement.",
-    "gloss": "He could have said north and south, which have poles and therefore a limit. He picked the pair with no meeting point."
+    "gloss": "He could have said north and south, which have poles and therefore a limit. He picked the pair with no meeting point.",
+    "story": {
+     "badge": "Parable",
+     "body": "She kept checking the same distance, the way you press a bruise, to see whether it was still there, with a sense that if she stopped checking it might come back. Somebody drew her the two directions on a napkin and showed her they never meet, at any distance, ever. She stopped pressing it that month."
+    }
    },
    {
     "ref": "Isaiah 61:4",
@@ -763,7 +995,11 @@
     "verseEnd": 4,
     "text": "And they shall build the old wastes, they shall raise up the former desolations, and they shall repair the waste cities, the desolations of many generations.",
     "quote": "The ruin is the building material.",
-    "gloss": "They shall build the old wastes and repair the waste cities. Nothing is imported. The wreck itself is what gets raised."
+    "gloss": "They shall build the old wastes and repair the waste cities. Nothing is imported. The wreck itself is what gets raised.",
+    "story": {
+     "badge": "Parable",
+     "body": "He wanted to move somewhere nobody knew what had happened and start clean, and he nearly did. He stayed instead, and the work he ended up doing is work only somebody who had been through that could do. Nothing was imported. What he built came out of the exact ground that had come down."
+    }
    },
    {
     "ref": "Isaiah 43:18",
@@ -773,7 +1009,11 @@
     "verseEnd": 18,
     "text": "Remember ye not the former things, neither consider the things of old.",
     "quote": "You are allowed to stop consulting it.",
-    "gloss": "Remember ye not the former things, neither consider the things of old. Consider is the sharper word. It means stop taking advice from it."
+    "gloss": "Remember ye not the former things, neither consider the things of old. Consider is the sharper word. It means stop taking advice from it.",
+    "story": {
+     "badge": "Parable",
+     "body": "She did not think about it constantly, which is what she would have told you. What she did was check with it before every decision, quietly, the way you check a weather app, so it got a vote in things it had no business voting on. Not remembering was never going to be possible. Not consulting it turned out to be."
+    }
    },
    {
     "ref": "Psalms 51:10",
@@ -783,7 +1023,11 @@
     "verseEnd": 10,
     "text": "Create in me a clean heart, O God; and renew a right spirit within me.",
     "quote": "Create. He asked for new, not repaired.",
-    "gloss": "Create is the word Genesis uses for making something out of nothing. David does not ask for the old heart cleaned up, and he asks this at his lowest point."
+    "gloss": "Create is the word Genesis uses for making something out of nothing. David does not ask for the old heart cleaned up, and he asks this at his lowest point.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had been trying to fix it himself for two years, which mostly meant managing it, keeping it out of sight, patching the same place. David does not ask for a repair. He asks for the thing to be made, out of nothing, which is a far larger request and, he found, a much easier one to make honestly."
+    }
    },
    {
     "ref": "Romans 8:1",
@@ -793,7 +1037,11 @@
     "verseEnd": 1,
     "text": "There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.",
     "quote": "Now. Not once you have finished fixing it.",
-    "gloss": "There is therefore now no condemnation. Paul sets the timing in the middle of the sentence where it cannot be quietly moved to later."
+    "gloss": "There is therefore now no condemnation. Paul sets the timing in the middle of the sentence where it cannot be quietly moved to later.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had a date in mind, unspoken, by which she would have earned the right to feel clear about herself, and the date kept moving. Somebody read her the verse and stopped at the word now and asked what she was waiting for. She could not name it. She had been serving a sentence nobody had handed down."
+    }
    },
    {
     "ref": "Micah 7:19",
@@ -803,7 +1051,11 @@
     "verseEnd": 19,
     "text": "He will turn again, he will have compassion upon us; he will subdue our iniquities; and thou wilt cast all their sins into the depths of the sea.",
     "quote": "The depths. Not the shallows, where you could wade back out and find them.",
-    "gloss": "Cast all their sins into the depths of the sea. In the ancient world that named the one place nothing was ever recovered from."
+    "gloss": "Cast all their sins into the depths of the sea. In the ancient world that named the one place nothing was ever recovered from.",
+    "story": {
+     "badge": "Parable",
+     "body": "He knew the theology and could have taught it, and still went out at low tide most mornings to see whether anything had washed up. That is not a failure of belief exactly. It is a habit. Breaking the habit took far longer than believing the doctrine, and the doctrine had never been the problem."
+    }
    },
    {
     "ref": "Isaiah 40:31",
@@ -827,7 +1079,11 @@
     "verseEnd": 5,
     "text": "Who satisfieth thy mouth with good things; so that thy youth is renewed like the eagle's.",
     "quote": "Renewed, not merely remembered.",
-    "gloss": "Satisfieth thy mouth with good things, so that thy youth is renewed. The renewal follows the filling, which puts supply first and recovery second."
+    "gloss": "Satisfieth thy mouth with good things, so that thy youth is renewed. The renewal follows the filling, which puts supply first and recovery second.",
+    "story": {
+     "badge": "Parable",
+     "body": "She spent a lot of time telling her kids what she used to be able to do, which was a way of visiting it. The verse puts the renewal after the filling, and she noticed she had not been filled with much for years. She changed what went in first. Some of what she had been calling age turned out to be depletion."
+    }
    },
    {
     "ref": "Ezekiel 36:26",
@@ -837,7 +1093,11 @@
     "verseEnd": 26,
     "text": "A new heart also will I give you, and a new spirit will I put within you: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh.",
     "quote": "The stone is taken out. It is not softened.",
-    "gloss": "Take away, and give. Two separate actions in one verse, which means the hardness gets removed rather than worked on."
+    "gloss": "Take away, and give. Two separate actions in one verse, which means the hardness gets removed rather than worked on.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had gone hard about one particular thing and had made peace with being that way, and called it realism. He prayed for years to feel differently and nothing softened, because softening was not what was on offer. What was on offer was a removal, and when it finally came it was not gradual and it did not feel like effort."
+    }
    },
    {
     "ref": "Jeremiah 30:17",
@@ -847,7 +1107,11 @@
     "verseEnd": 17,
     "text": "For I will restore health unto thee, and I will heal thee of thy wounds, saith the LORD; because they called thee an Outcast, saying, This is Zion, whom no man seeketh after.",
     "quote": "He heard what they called you, and answered that.",
-    "gloss": "Because they called thee an Outcast. The reason given for the healing is the name other people put on you, which He quotes back before undoing it."
+    "gloss": "Because they called thee an Outcast. The reason given for the healing is the name other people put on you, which He quotes back before undoing it.",
+    "story": {
+     "badge": "Parable",
+     "body": "The word they used about her was said once, at a family thing, years ago, and it stuck the way a word does when it lands on something you already half believed. The verse quotes the word before it undoes it, which she found mattered enormously. He did not tell her to get over it. He repeated it back, and then dealt with it."
+    }
    },
    {
     "ref": "1 John 1:9",
@@ -857,7 +1121,11 @@
     "verseEnd": 9,
     "text": "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.",
     "quote": "Faithful and just. Not merely willing.",
-    "gloss": "Both are legal words. The verse frames the cleansing as something owed and reliable rather than something begged for and hoped over."
+    "gloss": "Both are legal words. The verse frames the cleansing as something owed and reliable rather than something begged for and hoped over.",
+    "story": {
+     "badge": "Parable",
+     "body": "He asked the way you ask a favour of somebody who has already done too much for you, apologetically, half expecting to be told this was the last time. The two words in the verse are legal words. Faithful means He does it every time, and just means it would be wrong of Him not to. That is a completely different counter to walk up to."
+    }
    },
    {
     "ref": "Isaiah 58:12",
@@ -881,7 +1149,11 @@
     "verseEnd": 4,
     "text": "Turn again our captivity, O LORD, as the streams in the south.",
     "quote": "Dry riverbeds. They fill in a single night when the rain comes.",
-    "gloss": "As the streams in the south. Those beds sit empty most of the year, and the image was chosen for how fast they run once they fill."
+    "gloss": "As the streams in the south. Those beds sit empty most of the year, and the image was chosen for how fast they run once they fill.",
+    "story": {
+     "badge": "Parable",
+     "body": "The stream by the farm was dry eleven months of the year and you could walk it like a road, and visitors assumed it had always been a road. Anyone who lived there knew what it did in the wet season, and knew a dry bed is not the same thing as no river. It is the shape of a river, waiting."
+    }
    },
    {
     "ref": "Romans 4:18",
@@ -891,7 +1163,11 @@
     "verseEnd": 18,
     "text": "Who against hope believed in hope, that he might become the father of many nations, according to that which was spoken, So shall thy seed be.",
     "quote": "Against hope, he believed in hope. Both at once.",
-    "gloss": "Who against hope believed in hope. The facts were not on his side and he was not pretending they were. He refused to build on them."
+    "gloss": "Who against hope believed in hope. The facts were not on his side and he was not pretending they were. He refused to build on them.",
+    "story": {
+     "badge": "Parable",
+     "body": "He never pretended the numbers were good and could recite them accurately to anybody who asked, which is why people believed him when he said it was going to work. Those two things sat side by side in him for three years without contradiction. He was not optimistic. He simply refused to build anything on the numbers."
+    }
    },
    {
     "ref": "Isaiah 43:19",
@@ -915,7 +1191,11 @@
     "verseEnd": 3,
     "text": "Who forgiveth all thine iniquities; who healeth all thy diseases;",
     "quote": "All, and all. He used the word twice in one verse.",
-    "gloss": "Who forgiveth all thine iniquities, who healeth all thy diseases. Two clauses, the same total word in each, and no exception listed in either."
+    "gloss": "Who forgiveth all thine iniquities, who healeth all thy diseases. Two clauses, the same total word in each, and no exception listed in either.",
+    "story": {
+     "badge": "Parable",
+     "body": "She had a category she had never brought, on the grounds that it was the one thing that was genuinely her fault and therefore outside the offer. She was reading the verse for something else entirely when the first all landed on her. There is no list of exceptions in it. She brought the thing that week."
+    }
    },
    {
     "ref": "Zechariah 9:12",
@@ -925,7 +1205,11 @@
     "verseEnd": 12,
     "text": "Turn you to the strong hold, ye prisoners of hope: even to day do I declare that I will render double unto thee;",
     "quote": "Prisoners of hope. He is the one who named you that.",
-    "gloss": "Turn you to the strong hold, ye prisoners of hope. The same verse promises to render double, so the holding is temporary by design."
+    "gloss": "Turn you to the strong hold, ye prisoners of hope. The same verse promises to render double, so the holding is temporary by design.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had been calling it stubbornness, and other people had called it worse, this refusal to give up on something long past the point where giving up would have been reasonable. The phrase in the verse names it differently. He is not free of it, he is held by it, and the verse treats that as exactly the right place to be standing."
+    }
    },
    {
     "ref": "Psalms 85:6",
@@ -935,7 +1219,11 @@
     "verseEnd": 6,
     "text": "Wilt thou not revive us again: that thy people may rejoice in thee?",
     "quote": "Again. It has happened before, which is why he can ask.",
-    "gloss": "Wilt thou not revive us again. The request leans on a precedent, and the reviving is tied to the people rejoicing rather than to their deserving."
+    "gloss": "Wilt thou not revive us again. The request leans on a precedent, and the reviving is tied to the people rejoicing rather than to their deserving.",
+    "story": {
+     "badge": "Parable",
+     "body": "She could not find any grounds to ask, because the present offered none. So she went back through her own history and found four occasions, and wrote them down, and asked on the basis of those instead. It is a completely different prayer from the one you pray with nothing behind you. She had had the grounds the whole time."
+    }
    },
    {
     "ref": "Isaiah 54:4",
@@ -945,7 +1233,11 @@
     "verseEnd": 4,
     "text": "Fear not; for thou shalt not be ashamed: neither be thou confounded; for thou shalt not be put to shame: for thou shalt forget the shame of thy youth, and shalt not remember the reproach of thy widowhood any more.",
     "quote": "You will forget it. That is listed as part of the repair.",
-    "gloss": "Thou shalt forget the shame of thy youth. Forgetting is named as an outcome He provides, not as something you have to manufacture."
+    "gloss": "Thou shalt forget the shame of thy youth. Forgetting is named as an outcome He provides, not as something you have to manufacture.",
+    "story": {
+     "badge": "Parable",
+     "body": "He had assumed the forgetting was his job and that he was bad at it, and he had spent a great deal of effort trying not to think about something, which is the one instruction a mind cannot follow. The verse hands the forgetting to God and lists it as an outcome. He stopped trying to do it. Some of it went on its own."
+    }
    },
    {
     "ref": "Joel 2:26",
@@ -955,7 +1247,11 @@
     "verseEnd": 26,
     "text": "And ye shall eat in plenty, and be satisfied, and praise the name of the LORD your God, that hath dealt wondrously with you: and my people shall never be ashamed.",
     "quote": "Plenty and satisfied are two different promises.",
-    "gloss": "Ye shall eat in plenty, and be satisfied. A person can have plenty and stay hungry, so the verse says both on purpose."
+    "gloss": "Ye shall eat in plenty, and be satisfied. A person can have plenty and stay hungry, so the verse says both on purpose.",
+    "story": {
+     "badge": "Parable",
+     "body": "The year the money finally came he ate very well and was not satisfied at all, and it frightened him, because he had assumed those were the same thing. They are listed separately in the verse for a reason. The second one arrived about four years later, and by then he could see they had never been joined the way he thought."
+    }
    },
    {
     "ref": "Psalms 107:20",
@@ -965,7 +1261,11 @@
     "verseEnd": 20,
     "text": "He sent his word, and healed them, and delivered them from their destructions.",
     "quote": "He sent a word. That was the whole intervention.",
-    "gloss": "He sent his word, and healed them, and delivered them. Nothing else is described as being done, and both results follow from the sending."
+    "gloss": "He sent his word, and healed them, and delivered them. Nothing else is described as being done, and both results follow from the sending.",
+    "story": {
+     "badge": "Parable",
+     "body": "She was braced for something dramatic, because the situation was dramatic and that seemed proportionate. What actually arrived was a sentence, in a conversation she nearly did not have, from a woman she did not know well. It did not look like an intervention at the time. It is the thing everything after it moved on."
+    }
    }
   ]
  }
