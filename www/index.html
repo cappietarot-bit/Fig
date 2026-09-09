@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<meta name="theme-color" content="#14121F">
+<title>Fig</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Karla:wght@400;500;700&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap">
+<style>
+:root{
+  --night:#14121F; --night2:#1C1828; --lamp:#2A2033;
+  --bone:#E9E1D2; --brass:#C9A75E; --dim:#9B90A6;
+  --parch:#F2EAD8; --parchink:#2A241C; --parchrule:#D3C5A8; --parchmute:#7C6B4E;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Karla","Helvetica Neue",Arial,sans-serif;
+  --book:"Spectral",Georgia,"Times New Roman",serif;
+
+  --storytext:#D6CFDA;
+  --storytop:rgba(42,32,51,.58);
+  --storybot:rgba(42,32,51,.9);
+  --hairline:rgba(233,225,210,.13);
+  --glosshead:#8A7A5C;
+}
+
+/* ---------------- skins ----------------
+   Four complete palettes. Every colour the app uses is one of these tokens, so
+   a skin is a block of variables and nothing else has to know about it. */
+
+/* Bloom. Plum and rose gold, the softest of the four. */
+:root[data-skin="bloom"]{
+  --night:#1A1220; --night2:#241830; --lamp:#2E1E2E;
+  --bone:#F1E4E7; --brass:#DCA88F; --dim:#B398A7;
+  --parch:#F8EEE7; --parchink:#2E2028; --parchrule:#DFCBBD; --parchmute:#8A6A5E;
+  --storytext:#E2D2D8; --storytop:rgba(46,30,46,.58); --storybot:rgba(46,30,46,.9);
+  --hairline:rgba(241,228,231,.13); --glosshead:#8A6A5E;
+}
+
+/* Cedar. Deep blue green water with gold. */
+:root[data-skin="cedar"]{
+  --night:#0D1B1E; --night2:#132628; --lamp:#152B2A;
+  --bone:#E0EAE3; --brass:#C6A961; --dim:#88A39A;
+  --parch:#EFEAD9; --parchink:#22271F; --parchrule:#CFC7AC; --parchmute:#75705A;
+  --storytext:#CFDDD5; --storytop:rgba(21,43,42,.6); --storybot:rgba(21,43,42,.92);
+  --hairline:rgba(224,234,227,.13); --glosshead:#75705A;
+}
+
+/* Iron. Charcoal, steel and bronze. The hardest edged. */
+:root[data-skin="iron"]{
+  --night:#121316; --night2:#1A1C21; --lamp:#1E2127;
+  --bone:#E3E5E9; --brass:#AE7C46; --dim:#8C919B;
+  --parch:#E7E5E0; --parchink:#212329; --parchrule:#C9C6BE; --parchmute:#6E6C66;
+  --storytext:#CFD3DA; --storytop:rgba(30,33,39,.62); --storybot:rgba(30,33,39,.93);
+  --hairline:rgba(227,229,233,.13); --glosshead:#6E6C66;
+}
+
+/* Linen. Daylight. The scripture card goes dark here so it still lifts off the
+   page, which is the whole point of that beat. */
+:root[data-skin="linen"]{
+  --night:#F4F1EA; --night2:#EAE5DA; --lamp:#FFFFFF;
+  --bone:#2A2620; --brass:#94703A; --dim:#7B7364;
+  --parch:#282219; --parchink:#EFE7D6; --parchrule:#4C4335; --parchmute:#AC9A78;
+  --storytext:#4A4438; --storytop:rgba(255,255,255,.66); --storybot:rgba(255,255,255,.9);
+  --hairline:rgba(42,38,32,.16); --glosshead:#AC9A78;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+/* .loading and .layer set display, which beats the browser default for [hidden]. */
+[hidden]{display:none!important}
+html,body{margin:0;height:100%;overflow:hidden}
+body{
+  background:var(--night);color:var(--bone);
+  font-family:var(--sans);line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  overscroll-behavior:none;
+}
+
+#app{
+  position:relative;height:100%;width:100%;
+  max-width:520px;margin:0 auto;
+  display:flex;flex-direction:column;overflow:hidden;
+  background:var(--night);
+}
+#bg{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0}
+.scrim{position:absolute;inset:0;background:var(--night);opacity:0;transition:opacity .7s ease;pointer-events:none;z-index:1}
+#app[data-beat="2"] .scrim{opacity:.34}
+#app[data-beat="3"] .scrim{opacity:.5}
+
+.layer{position:relative;z-index:2;display:flex;flex-direction:column;flex:1;min-height:0}
+
+/* ---------------- top ---------------- */
+.top{flex:0 0 auto;padding:calc(14px + env(safe-area-inset-top)) 20px 0}
+.toprow{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--dim);
+}
+.toprow .streak b{color:var(--brass)}
+
+.topright{display:flex;align-items:center;gap:11px}
+.skinbtn{
+  width:19px;height:19px;border-radius:99px;padding:0;cursor:pointer;
+  border:1px solid var(--hairline);
+  background:linear-gradient(135deg,var(--brass) 0 50%,var(--night2) 50%);
+}
+.skinbtn:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.skinrow{display:flex;gap:5px;margin-top:11px}
+.skinswatch{
+  flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;
+  background:none;border:0;padding:5px 2px;cursor:pointer;border-radius:9px;
+  font-family:var(--sans);font-size:8.5px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--dim);
+}
+.skinswatch .dot{width:22px;height:22px;border-radius:99px;border:1px solid var(--hairline)}
+.skinswatch[aria-pressed="true"]{color:var(--brass)}
+.skinswatch[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--brass)}
+.skinswatch:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+
+.tabs{display:flex;gap:7px;margin-top:13px}
+.tab{
+  flex:1;position:relative;
+  font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.06em;
+  padding:9px 4px;border-radius:99px;cursor:pointer;
+  background:var(--hairline);border:1px solid var(--hairline);color:var(--dim);
+  transition:.18s ease;
+}
+.tab[aria-selected="true"]{background:var(--brass);border-color:var(--brass);color:var(--night)}
+.tab:focus-visible{outline:2px solid var(--bone);outline-offset:2px}
+.tab .seen{
+  position:absolute;top:5px;right:8px;width:5px;height:5px;border-radius:99px;
+  background:var(--brass);opacity:0;transition:opacity .2s ease;
+}
+.tab[data-seen="1"] .seen{opacity:.85}
+.tab[aria-selected="true"] .seen{background:var(--night)}
+
+/* ---------------- quote ---------------- */
+.card{position:relative;flex:1;display:flex;flex-direction:column;min-height:0;cursor:pointer;overflow:hidden;user-select:none;-webkit-user-select:none}
+.card:focus-visible{outline:2px solid var(--brass);outline-offset:-4px}
+
+/* The sheets sit out of flow, otherwise their height is reserved at the bottom
+   of the card while they are still translated off screen and the quote floats
+   in a third of the space it should have. */
+.sheets{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;flex-direction:column}
+
+.quotewrap{
+  flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;
+  padding:0 26px;min-height:0;
+  transition:flex-grow .6s cubic-bezier(.2,.7,.2,1);
+}
+.quote{
+  margin:0;font-family:var(--serif);color:var(--bone);font-weight:300;
+  font-size:clamp(30px,8.2vw,42px);line-height:1.13;letter-spacing:-.012em;text-wrap:balance;
+  transition:font-size .55s cubic-bezier(.2,.7,.2,1),color .5s ease;
+}
+#app[data-beat="2"] .quote,#app[data-beat="3"] .quote{font-size:clamp(19px,4.8vw,23px);line-height:1.24;color:var(--dim)}
+#app[data-beat="2"] .quotewrap,#app[data-beat="3"] .quotewrap{justify-content:flex-start;padding-top:18px}
+
+.cue{
+  margin:20px 0 0;display:flex;align-items:center;gap:9px;
+  font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);
+  transition:opacity .35s ease;
+}
+.cue .pulse{width:6px;height:6px;border-radius:99px;background:var(--brass);animation:breathe 2.6s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+#app[data-beat="3"] .cue{opacity:0;pointer-events:none}
+
+/* ---------------- story ---------------- */
+.story{
+  flex:0 0 auto;
+  background:linear-gradient(180deg,var(--storytop),var(--storybot));
+  border-top:1px solid rgba(160,140,90,.3);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  padding:15px 24px 17px;
+  transform:translateY(110%);opacity:0;
+  transition:transform .62s cubic-bezier(.2,.75,.2,1),opacity .4s ease;
+}
+#app[data-beat="2"] .story,#app[data-beat="3"] .story{transform:translateY(0);opacity:1}
+.storyhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.storyhead .who{font-weight:700;font-size:13.5px;color:var(--bone)}
+.storyhead .where{font-size:11px;color:var(--dim);letter-spacing:.05em}
+.storyhead .badge{
+  margin-left:auto;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);
+  border:1px solid rgba(160,140,90,.42);border-radius:99px;padding:3px 8px;white-space:nowrap;
+}
+.storybody{
+  margin:9px 0 0;font-size:13.5px;line-height:1.62;color:var(--storytext);
+  max-height:min(200px,26vh);overflow:auto;
+  transition:max-height .55s cubic-bezier(.3,.7,.2,1),opacity .35s ease,margin .5s ease;
+}
+#app[data-beat="3"] .storybody{max-height:0;opacity:0;margin-top:0;overflow:hidden}
+
+/* ---------------- verse ---------------- */
+.versecard{
+  flex:0 0 auto;background:var(--parch);color:var(--parchink);
+  padding:19px 24px 22px;cursor:pointer;
+  transform:translateY(110%);
+  transition:transform .66s cubic-bezier(.2,.75,.2,1);
+  box-shadow:0 -22px 44px -20px rgba(0,0,0,.6);
+}
+#app[data-beat="3"] .versecard{transform:translateY(0)}
+.versecard:focus-visible{outline:2px solid var(--parchmute);outline-offset:-4px}
+.restson{
+  margin:0 0 11px;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:700;color:var(--glosshead);display:flex;align-items:center;gap:9px;
+}
+.restson::after{content:"";flex:1;height:1px;background:var(--parchrule)}
+.verse{margin:0;font-family:var(--book);font-size:16.5px;line-height:1.5;font-style:italic;font-weight:300}
+.refrow{display:flex;align-items:center;gap:10px;margin-top:10px}
+.ref{font-weight:700;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--parchmute)}
+.readlink{
+  margin-left:auto;font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--parchink);background:none;border:1px solid var(--parchrule);border-radius:99px;
+  padding:6px 12px;font-family:var(--sans);cursor:pointer;
+}
+.readlink:hover{background:rgba(128,128,128,.14)}
+/* The explanation stays folded away. Anyone who wants it opens it. */
+.glosstoggle{
+  display:flex;align-items:center;gap:8px;width:100%;
+  margin:12px 0 0;padding:10px 0 0;border:0;border-top:1px solid var(--parchrule);
+  background:none;cursor:pointer;font-family:var(--sans);
+  font-size:9.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--glosshead);
+}
+.glosstoggle .chev{margin-left:auto;font-size:15px;line-height:1;transition:transform .22s ease}
+.glosstoggle[aria-expanded="true"] .chev{transform:rotate(45deg)}
+.glosstoggle:hover{color:var(--parchink)}
+.glosstoggle:focus-visible{outline:2px solid var(--parchmute);outline-offset:2px}
+.gloss{margin:9px 0 0;font-family:var(--book);font-size:13px;line-height:1.58;color:var(--parchink)}
+
+.cardfoot{display:flex;gap:8px;margin-top:13px;padding-top:11px;border-top:1px solid var(--parchrule)}
+.minibtn{
+  font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+  background:none;border:1px solid var(--parchrule);border-radius:99px;padding:7px 13px;
+  color:var(--parchmute);cursor:pointer;transition:.15s ease;
+}
+.minibtn:hover{background:rgba(128,128,128,.14);color:var(--parchink)}
+.minibtn[aria-pressed="true"]{background:var(--parchink);border-color:var(--parchink);color:var(--parch)}
+.minibtn.share{margin-left:auto}
+.minibtn:focus-visible{outline:2px solid var(--parchmute);outline-offset:2px}
+
+/* ---------------- reader ---------------- */
+.reader{
+  position:fixed;inset:0;z-index:50;background:var(--parch);color:var(--parchink);
+  display:flex;flex-direction:column;
+  transform:translateY(100%);transition:transform .38s cubic-bezier(.25,.8,.3,1);
+  max-width:520px;margin:0 auto;
+}
+.reader[data-open="1"]{transform:translateY(0)}
+.readerbar{
+  flex:0 0 auto;display:flex;align-items:center;gap:12px;
+  padding:calc(13px + env(safe-area-inset-top)) 18px 13px;
+  border-bottom:1px solid var(--parchrule);background:var(--parch);
+}
+.readerbar h2{margin:0;font-family:var(--serif);font-weight:500;font-size:21px;letter-spacing:-.01em}
+.readerbar .close{
+  margin-left:auto;background:none;border:1px solid var(--parchrule);border-radius:99px;
+  width:32px;height:32px;font-size:16px;cursor:pointer;color:var(--parchink);display:grid;place-items:center;
+}
+.readerbar .close:focus-visible,.navbtn:focus-visible{outline:2px solid var(--parchmute);outline-offset:2px}
+.readerbody{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:18px 22px 26px}
+.v{margin:0 0 11px;font-family:var(--book);font-size:16px;line-height:1.62;scroll-margin-top:20px}
+.v .num{
+  font-family:var(--sans);font-size:10px;font-weight:700;color:var(--parchmute);
+  vertical-align:super;margin-right:5px;letter-spacing:.02em;
+}
+.v.hit{background:rgba(201,167,94,.26);border-radius:4px;box-shadow:0 0 0 5px rgba(201,167,94,.26)}
+.readernav{
+  flex:0 0 auto;display:flex;gap:10px;align-items:center;
+  padding:11px 18px calc(11px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--parchrule);background:var(--parch);
+}
+.navbtn{
+  flex:1;background:none;border:1px solid var(--parchrule);border-radius:9px;
+  padding:10px;font-family:var(--sans);font-size:11.5px;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--parchink);cursor:pointer;
+}
+.navbtn:disabled{opacity:.32;cursor:default}
+.navbtn:not(:disabled):hover{background:rgba(128,128,128,.14)}
+
+.loading{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:3;
+  color:var(--dim);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+}
+.toast{
+  position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);
+  background:var(--lamp);color:var(--bone);border:1px solid rgba(201,167,94,.3);
+  padding:10px 16px;border-radius:99px;font-size:12.5px;z-index:60;
+  opacity:0;pointer-events:none;transition:opacity .25s ease;white-space:nowrap;
+}
+.toast[data-show="1"]{opacity:1}
+
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
+</head>
+<body>
+
+<div id="app" data-beat="1">
+  <canvas id="bg"></canvas>
+  <div class="scrim"></div>
+  <div class="loading" id="loading">Fig</div>
+
+  <div class="layer" id="layer" hidden>
+
+    <div class="top">
+      <div class="toprow">
+        <span id="dateLabel"></span>
+        <span class="topright">
+          <span class="streak">Day <b id="streakNum">1</b> in a row</span>
+          <button class="skinbtn" type="button" id="skinBtn"
+                  aria-expanded="false" aria-controls="skinRow" aria-label="Change the look"></button>
+        </span>
+      </div>
+      <div class="skinrow" id="skinRow" hidden></div>
+      <div class="tabs" role="tablist" id="tabs"></div>
+    </div>
+
+    <div class="card" id="card" role="button" tabindex="0" aria-label="Tap to open the next part of this card">
+      <div class="quotewrap">
+        <p class="quote" id="quote"></p>
+        <p class="cue"><span class="pulse"></span><span id="cueText">Tap to open</span></p>
+      </div>
+
+      <div class="sheets">
+      <div class="story" id="storyPane">
+        <div class="storyhead">
+          <span class="who" id="who"></span>
+          <span class="where" id="where"></span>
+          <span class="badge" id="badge"></span>
+        </div>
+        <p class="storybody" id="storyBody"></p>
+      </div>
+
+      <div class="versecard" id="verseCard">
+        <p class="restson">The verse it rests on</p>
+        <p class="verse" id="verseText" role="button" tabindex="0" aria-label="Open this chapter"></p>
+        <div class="refrow">
+          <span class="ref" id="refLabel"></span>
+          <button class="readlink" type="button" id="readBtn">Read the chapter</button>
+        </div>
+
+        <button class="glosstoggle" type="button" id="glossToggle" aria-expanded="false" aria-controls="gloss">
+          <span>Why this verse</span><span class="chev">+</span>
+        </button>
+        <p class="gloss" id="gloss" hidden></p>
+
+        <div class="cardfoot">
+          <button class="minibtn" type="button" id="saveBtn" aria-pressed="false">Save</button>
+          <button class="minibtn share" type="button" id="shareBtn">Share what happened</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="reader" id="reader" data-open="0" aria-hidden="true">
+  <div class="readerbar">
+    <h2 id="readerTitle">Chapter</h2>
+    <button class="close" type="button" id="readerClose" aria-label="Close the chapter">&times;</button>
+  </div>
+  <div class="readerbody" id="readerBody"></div>
+  <div class="readernav">
+    <button class="navbtn" type="button" id="prevCh">Previous</button>
+    <button class="navbtn" type="button" id="nextCh">Next</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* Paste the Google Form link here to wire up the Share button. */
+var FORM_URL = "";
+
+var KEY = "fig_v1";
+var EPOCH = Date.UTC(2026, 0, 1);          /* day 0. everyone sees the same card. */
+var STREAMS = ["receive", "gratitude", "restoration"];
+var LABEL = { receive: "Receive", gratitude: "Gratitude", restoration: "Restoration" };
+
+/* The three streams start at different points in their own list. Without this
+   they all sit on the same index every day, so the days that carry a story
+   carry three of them and the rest carry none. */
+var OFFSET = { receive: 0, gratitude: 5, restoration: 9 };
+
+var content = null, bible = null, bibleLoading = null;
+
+/* Served normally these are two files next to the page. The single file build
+   used for previews bakes them into window.FIG_INLINE instead. */
+function getJSON(name){
+  if (window.FIG_INLINE && window.FIG_INLINE[name]) return Promise.resolve(window.FIG_INLINE[name]);
+  return fetch("data/" + name + ".json").then(function(r){
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  });
+}
+var stream = STREAMS[0], beat = 1, dayIndex = 0;
+var state = loadState();
+document.documentElement.setAttribute("data-skin", state.skin || "bloom");
+var reader = { book: null, chapter: 1, hit: 0 };
+
+/* ---------------- state ---------------- */
+function loadState(){
+  var base = { streak: 0, lastDay: null, saved: [], seen: {}, skin: "bloom" };
+  try {
+    var raw = JSON.parse(localStorage.getItem(KEY));
+    if (raw && typeof raw === "object"){
+      for (var k in base) if (k in raw) base[k] = raw[k];
+    }
+  } catch(e){}
+  return base;
+}
+function saveState(){
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){}
+}
+
+function todayIndex(){
+  /* ?day=N previews any other day. Handy for reading ahead while writing cards. */
+  var forced = /[?&]day=(-?\d+)/.exec(location.search);
+  if (forced) return parseInt(forced[1], 10);
+  var now = new Date();
+  var local = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.floor((local - EPOCH) / 86400000);
+}
+
+function touchStreak(){
+  if (state.lastDay === dayIndex) return;
+  state.streak = (state.lastDay === dayIndex - 1) ? state.streak + 1 : 1;
+  state.lastDay = dayIndex;
+  state.seen = {};                          /* a new day, three unopened cards */
+  saveState();
+}
+
+/* ---------------- cards ---------------- */
+function cardFor(name){
+  var list = content.streams[name] || [];
+  if (!list.length) return null;
+  var i = dayIndex + (OFFSET[name] || 0);
+  return list[((i % list.length) + list.length) % list.length];
+}
+function cardId(name){ var c = cardFor(name); return c ? name + ":" + c.ref : name; }
+
+function setBeat(n){
+  beat = n;
+  document.getElementById("app").setAttribute("data-beat", String(n));
+  if (n >= 3){
+    state.seen[cardId(stream)] = 1;
+    saveState();
+    paintTabs();
+  }
+}
+
+var SKINS = [
+  { id:"bloom", name:"Bloom", dot:"linear-gradient(135deg,#5B2A55,#DCA88F)" },
+  { id:"cedar", name:"Cedar", dot:"linear-gradient(135deg,#123C3A,#C6A961)" },
+  { id:"iron",  name:"Iron",  dot:"linear-gradient(135deg,#22313F,#AE7C46)" },
+  { id:"linen", name:"Linen", dot:"linear-gradient(135deg,#E4DCC8,#94703A)" }
+];
+
+function applySkin(id){
+  state.skin = id;
+  saveState();
+  document.documentElement.setAttribute("data-skin", id);
+  if (window.FIG_SKIN) window.FIG_SKIN(id);
+  paintSkins();
+}
+
+function paintSkins(){
+  var row = document.getElementById("skinRow");
+  row.innerHTML = "";
+  SKINS.forEach(function(sk){
+    var b = document.createElement("button");
+    b.className = "skinswatch";
+    b.type = "button";
+    b.setAttribute("aria-pressed", sk.id === state.skin ? "true" : "false");
+    var dot = document.createElement("span");
+    dot.className = "dot";
+    dot.style.background = sk.dot;
+    b.appendChild(dot);
+    b.appendChild(document.createTextNode(sk.name));
+    b.addEventListener("click", function(){ applySkin(sk.id); });
+    row.appendChild(b);
+  });
+}
+
+function paintTabs(){
+  var tabs = document.getElementById("tabs");
+  tabs.innerHTML = "";
+  STREAMS.forEach(function(name){
+    var b = document.createElement("button");
+    b.className = "tab";
+    b.type = "button";
+    b.setAttribute("role", "tab");
+    b.setAttribute("aria-selected", name === stream ? "true" : "false");
+    b.dataset.seen = state.seen[cardId(name)] ? "1" : "0";
+    b.innerHTML = LABEL[name] + '<span class="seen"></span>';
+    b.addEventListener("click", function(){
+      if (name === stream) return;
+      stream = name;
+      setBeat(1);
+      paintCard();
+      paintTabs();
+    });
+    tabs.appendChild(b);
+  });
+}
+
+function paintCard(){
+  var c = cardFor(stream);
+  if (!c) return;
+
+  document.getElementById("quote").textContent = c.quote;
+  document.getElementById("verseText").textContent = c.text;
+  document.getElementById("refLabel").textContent = c.ref;
+  document.getElementById("gloss").textContent = c.gloss;
+
+  /* every card starts with its explanation folded away */
+  document.getElementById("gloss").hidden = true;
+  document.getElementById("glossToggle").setAttribute("aria-expanded", "false");
+
+  var pane = document.getElementById("storyPane");
+  var hasStory = !!c.story;
+  pane.hidden = !hasStory;
+  document.getElementById("cueText").textContent =
+    hasStory ? "Tap for the story underneath" : "Tap for the verse underneath";
+
+  if (hasStory){
+    var s = c.story;
+    document.getElementById("badge").textContent = s.badge || "Parable";
+    document.getElementById("storyBody").textContent = s.body;
+    var who = document.getElementById("who"), where = document.getElementById("where");
+    who.textContent = s.who || "";   who.hidden = !s.who;
+    where.textContent = s.where || ""; where.hidden = !s.where;
+  }
+
+  var star = document.getElementById("saveBtn");
+  var isSaved = state.saved.indexOf(cardId(stream)) >= 0;
+  star.setAttribute("aria-pressed", isSaved ? "true" : "false");
+  star.textContent = isSaved ? "Saved" : "Save";
+}
+
+/* A card with no story has two beats, not three. */
+function advance(){
+  var c = cardFor(stream);
+  var last = (c && c.story) ? 3 : 2;
+  if (beat >= last){ setBeat(1); return; }
+  setBeat(c && c.story ? beat + 1 : 3);
+}
+
+/* ---------------- reader ---------------- */
+function loadBible(){
+  if (bible) return Promise.resolve(bible);
+  if (!bibleLoading){
+    bibleLoading = getJSON("bible")
+      .then(function(d){
+        bible = {};
+        d.books.forEach(function(b){ bible[b.n] = b.c; });
+        return bible;
+      });
+  }
+  return bibleLoading;
+}
+
+function openReader(book, chapter, hitVerse){
+  reader.book = book; reader.chapter = chapter; reader.hit = hitVerse || 0;
+  toast("Opening " + book + " " + chapter);
+  loadBible().then(function(){
+    toast("");
+    paintReader();
+    var el = document.getElementById("reader");
+    el.dataset.open = "1";
+    el.setAttribute("aria-hidden", "false");
+    document.getElementById("readerClose").focus();
+  }).catch(function(){
+    toast("Could not open the chapter");
+  });
+}
+
+function paintReader(){
+  var chapters = bible[reader.book];
+  if (!chapters) return;
+  var verses = chapters[reader.chapter - 1] || [];
+
+  document.getElementById("readerTitle").textContent = reader.book + " " + reader.chapter;
+  var body = document.getElementById("readerBody");
+  body.innerHTML = "";
+
+  verses.forEach(function(text, i){
+    var p = document.createElement("p");
+    p.className = "v" + (i + 1 === reader.hit ? " hit" : "");
+    var n = document.createElement("span");
+    n.className = "num";
+    n.textContent = i + 1;
+    p.appendChild(n);
+    p.appendChild(document.createTextNode(text));
+    body.appendChild(p);
+  });
+
+  body.scrollTop = 0;
+  var hit = body.querySelector(".hit");
+  if (hit) hit.scrollIntoView({ block: "center" });
+
+  document.getElementById("prevCh").disabled = reader.chapter <= 1;
+  document.getElementById("nextCh").disabled = reader.chapter >= chapters.length;
+}
+
+function step(delta){
+  var chapters = bible[reader.book];
+  var next = reader.chapter + delta;
+  if (next < 1 || next > chapters.length) return;
+  reader.chapter = next;
+  reader.hit = 0;                            /* only the card's own verse gets lit */
+  paintReader();
+}
+
+function closeReader(){
+  var el = document.getElementById("reader");
+  el.dataset.open = "0";
+  el.setAttribute("aria-hidden", "true");
+  document.getElementById("verseCard").focus();
+}
+
+/* ---------------- bits ---------------- */
+var toastTimer = null;
+function toast(msg){
+  var t = document.getElementById("toast");
+  clearTimeout(toastTimer);
+  if (!msg){ t.dataset.show = "0"; return; }
+  t.textContent = msg;
+  t.dataset.show = "1";
+  toastTimer = setTimeout(function(){ t.dataset.show = "0"; }, 2200);
+}
+
+function wire(){
+  var card = document.getElementById("card");
+  card.addEventListener("click", function(e){
+    if (e.target.closest("#verseCard")) return;   /* the verse has its own job */
+    advance();
+  });
+  card.addEventListener("keydown", function(e){
+    if (e.key === "Enter" || e.key === " "){ e.preventDefault(); advance(); }
+  });
+
+  function openThisChapter(e){
+    e.stopPropagation();
+    var c = cardFor(stream);
+    if (c) openReader(c.book, c.chapter, c.verse);
+  }
+  /* The verse itself opens the chapter. The buttons around it do their own jobs,
+     so the handler is on the text rather than on the whole card. */
+  document.getElementById("verseText").addEventListener("click", openThisChapter);
+  document.getElementById("verseText").addEventListener("keydown", function(e){
+    if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openThisChapter(e); }
+  });
+  document.getElementById("readBtn").addEventListener("click", openThisChapter);
+
+  document.getElementById("glossToggle").addEventListener("click", function(e){
+    e.stopPropagation();
+    var b = e.currentTarget, open = b.getAttribute("aria-expanded") === "true";
+    b.setAttribute("aria-expanded", open ? "false" : "true");
+    document.getElementById("gloss").hidden = open;
+  });
+
+  document.getElementById("skinBtn").addEventListener("click", function(e){
+    var b = e.currentTarget, open = b.getAttribute("aria-expanded") === "true";
+    b.setAttribute("aria-expanded", open ? "false" : "true");
+    document.getElementById("skinRow").hidden = open;
+  });
+
+  document.getElementById("readerClose").addEventListener("click", closeReader);
+  document.getElementById("prevCh").addEventListener("click", function(){ step(-1); });
+  document.getElementById("nextCh").addEventListener("click", function(){ step(1); });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && document.getElementById("reader").dataset.open === "1") closeReader();
+  });
+
+  document.getElementById("saveBtn").addEventListener("click", function(e){
+    e.stopPropagation();
+    var id = cardId(stream), i = state.saved.indexOf(id);
+    if (i >= 0) state.saved.splice(i, 1); else state.saved.push(id);
+    saveState();
+    var on = i < 0;
+    e.currentTarget.setAttribute("aria-pressed", on ? "true" : "false");
+    e.currentTarget.textContent = on ? "Saved" : "Save";
+  });
+
+  document.getElementById("shareBtn").addEventListener("click", function(e){
+    e.stopPropagation();
+    if (FORM_URL) window.open(FORM_URL, "_blank", "noopener");
+    else toast("Add your form link in FORM_URL");
+  });
+}
+
+/* ---------------- start ---------------- */
+getJSON("content")
+  .then(function(d){
+    content = d;
+    dayIndex = todayIndex();
+    touchStreak();
+
+    document.getElementById("dateLabel").textContent =
+      new Date().toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+    document.getElementById("streakNum").textContent = state.streak;
+
+    applySkin(state.skin || "bloom");
+    paintTabs();
+    paintCard();
+    wire();
+
+    document.getElementById("loading").hidden = true;
+    document.getElementById("layer").hidden = false;
+  })
+  .catch(function(){
+    document.getElementById("loading").textContent = "Could not load today's cards";
+  });
+
+/* ---------------- background ---------------- */
+(function(){
+  var c = document.getElementById("bg");
+  if (!c || !c.getContext) return;
+  var x = c.getContext("2d");
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var W = 0, H = 0, t = 0;
+
+  /* Each skin drifts its own four clouds. Linen paints on a light ground, so it
+     multiplies down instead of screening up, or the colour washes out to nothing. */
+  var BLOBS = [
+    { r:1.05, ox:.28, oy:.24, ax:.20, ay:.16, sx:.00021, sy:.00013 },
+    { r:0.95, ox:.74, oy:.40, ax:.22, ay:.20, sx:.00016, sy:.00024 },
+    { r:0.70, ox:.52, oy:.80, ax:.26, ay:.14, sx:.00027, sy:.00018 },
+    { r:0.62, ox:.18, oy:.70, ax:.18, ay:.22, sx:.00019, sy:.00029 }
+  ];
+  var SKINBG = {
+    bloom: { base:"#1A1220", blend:"screen",   grain:.05,
+             cols:["#5B2A55","#3A2350","#8A5A3C","#7A3348"], star:"rgba(246,226,230," },
+    cedar: { base:"#0D1B1E", blend:"screen",   grain:.05,
+             cols:["#123C3A","#14304F","#1E4A38","#3C5A46"], star:"rgba(226,240,232," },
+    iron:  { base:"#121316", blend:"screen",   grain:.06,
+             cols:["#22313F","#2C2F36","#4A3524","#1B3A44"], star:"rgba(228,232,238," },
+    linen: { base:"#F4F1EA", blend:"multiply", grain:.03,
+             cols:["#D9C69A","#E0C9C9","#C3D0DE","#DED2B6"], star:"rgba(120,105,80," }
+  };
+  var cfg = SKINBG.bloom;
+
+  window.FIG_SKIN = function(name){
+    cfg = SKINBG[name] || SKINBG.bloom;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", cfg.base);
+    if (still) draw();
+  };
+  var STARS = [];
+  for (var i = 0; i < 34; i++){
+    STARS.push({ x:Math.random(), y:Math.random()*.72, r:Math.random()*1.1+.35,
+                 p:Math.random()*6.28, s:Math.random()*.0009+.0004 });
+  }
+
+  var grain = document.createElement("canvas");
+  grain.width = grain.height = 110;
+  (function(){
+    var g = grain.getContext("2d");
+    var img = g.createImageData(110,110), d = img.data;
+    for (var i = 0; i < d.length; i += 4){
+      var v = 128 + (Math.random()*54 - 27);
+      d[i] = d[i+1] = d[i+2] = v; d[i+3] = 255;
+    }
+    g.putImageData(img, 0, 0);
+  })();
+  var pat = null;
+
+  function size(){
+    var r = c.getBoundingClientRect();
+    W = Math.max(1, r.width); H = Math.max(1, r.height);
+    c.width = Math.round(W*dpr); c.height = Math.round(H*dpr);
+    x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    pat = x.createPattern(grain, "repeat");
+  }
+
+  function draw(){
+    x.globalCompositeOperation = "source-over";
+    x.fillStyle = cfg.base;
+    x.fillRect(0, 0, W, H);
+
+    x.globalCompositeOperation = cfg.blend;
+    var span = Math.max(W, H);
+    for (var i = 0; i < BLOBS.length; i++){
+      var b = BLOBS[i];
+      var cx = (b.ox + Math.sin(t*b.sx + i) * b.ax) * W;
+      var cy = (b.oy + Math.cos(t*b.sy + i*1.7) * b.ay) * H;
+      var rad = span * b.r * 0.62;
+      var g = x.createRadialGradient(cx, cy, 0, cx, cy, rad);
+      g.addColorStop(0, cfg.cols[i % cfg.cols.length]);
+      g.addColorStop(1, "rgba(0,0,0,0)");
+      x.fillStyle = g;
+      x.beginPath(); x.arc(cx, cy, rad, 0, 6.2832); x.fill();
+    }
+
+    for (var j = 0; j < STARS.length; j++){
+      var s = STARS[j];
+      var a = 0.14 + 0.34 * (0.5 + 0.5*Math.sin(t*s.s + s.p));
+      x.fillStyle = cfg.star + a.toFixed(3) + ")";
+      x.beginPath(); x.arc(s.x*W, s.y*H, s.r, 0, 6.2832); x.fill();
+    }
+
+    if (pat){
+      x.globalCompositeOperation = "overlay";
+      x.globalAlpha = cfg.grain;
+      x.fillStyle = pat;
+      x.fillRect(0, 0, W, H);
+      x.globalAlpha = 1;
+    }
+    x.globalCompositeOperation = "source-over";
+  }
+
+  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function loop(now){ t = now; draw(); requestAnimationFrame(loop); }
+
+  size();
+  if (still){ t = 2400; draw(); } else { requestAnimationFrame(loop); }
+  window.addEventListener("resize", function(){ size(); if (still) draw(); });
+})();
+</script>
+</body>
+</html>
