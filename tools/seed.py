@@ -518,11 +518,6 @@ FULL = {
                 "text": "What she stopped doing that month was asking. Not out of bitterness, and not because she had let the place go, but because she had heard something in the way she asked. Underneath the words there was a small grinding sound, like somebody pushing a door that opens the other way. She could hear that she did not expect anything. So she stopped, and instead she started going to sleep in the apartment, which is the only way she knows how to say it. She would lie down in her mother's spare room and put herself in the other place and stay there until it was ordinary, until she was bored in it, putting a mug down, looking for a charger.",
                 "links": [
                     {
-                        "phrase": "she did not expect anything",
-                        "ref": "James 1:6",
-                        "moment": "The one who wavers is a wave driven with the wind and tossed. Not still, not lazy, just in motion all day without arriving anywhere.",
-                    },
-                    {
                         "phrase": "going to sleep in the apartment",
                         "ref": "Genesis 28:11",
                         "moment": "Jacob lies down for the night in a place he is only passing through, with a stone for a pillow, and is told in his sleep that the ground he is lying on is already given to him.",
@@ -536,11 +531,6 @@ FULL = {
                         "phrase": "Six weeks went by with nothing at all",
                         "ref": "1 Kings 18:43",
                         "moment": "Elijah sends his servant to look toward the sea and the servant comes back with nothing, seven times over. Elijah had already told the king to go and eat, because he could hear rain that had not started.",
-                    },
-                    {
-                        "phrase": "the voice of someone confirming an arrangement",
-                        "ref": "Hebrews 11:1",
-                        "moment": "Substance and evidence are both words from a courtroom. Faith is entered as the exhibit rather than argued as the case.",
                     },
                 ],
             },

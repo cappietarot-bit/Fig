@@ -57,10 +57,45 @@ type scripture.** The reference is looked up in `bible.json` at build time, so a
 misquote is structurally impossible. A bad reference stops the build with the
 reason.
 
-A story is a pair: the badge and the body. `Parable` for ones we write, with no
-name. `Sent in` for a real one, which also carries a first name and a city.
-Keeping those two labelled differently is what makes a real testimony worth
-something when it arrives.
+A story is badged `Parable` when we wrote it, and it carries no name. A real
+testimony is badged `Sent in` and carries a first name and a city. Keeping the
+two labelled differently is what makes a real one worth something when it
+arrives.
+
+## What a full length story looks like
+
+Full stories live in `FULL` in `tools/seed.py`. The spec:
+
+- **Three paragraphs**, five to seven sentences each, roughly 90 to 130 words.
+  Paragraph one presents the obstacle, two is what the person did, three is the
+  wait and the turn and an ending that lands.
+- **One inline anchor per paragraph.** An anchor names a phrase already in that
+  paragraph and the biblical moment it touches. In the app the phrase is
+  underlined and opens that chapter; at the end of the story the same three are
+  listed with the moment explained and the verse beneath it. Written once,
+  shown in both places.
+- Anchors point at **real biblical moments**, not invented vignettes.
+
+```python
+"Mark 11:24": {
+    "paragraphs": [
+        {
+            "text": "She had been turned down for the apartment twice, ...",
+            "links": [{
+                "phrase": "turned down for the apartment twice",
+                "ref": "Matthew 15:23",
+                "moment": "A woman asks him for her daughter and he answers her not a word...",
+            }],
+        },
+        ...
+    ],
+},
+```
+
+The build stops if an anchored phrase is not in its paragraph exactly once, or
+if the reference does not resolve, so an anchor cannot silently vanish. Cards
+not yet written to full length still work: they show one paragraph and skip the
+parable stage. `seed.py` prints how many are still short.
 
 ## Rebuilding the verse pool
 
